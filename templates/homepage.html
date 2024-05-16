@@ -1,0 +1,148 @@
+<<!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="menuBar">
+            <a href="/">Home</a>
+            <a href="/designManifesto">Design Manifesto</a>
+            <a href="/projects">Projects</a>
+            <a href="#contact">Contact me</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <!-- Introduction/Welcome Message -->
+            <section id="home">
+                <h2>Welcome to my website!</h2>
+                <br>
+                <p>My name is Danielle Quaye and the purpose of this website is to showcase my passion and achievements
+                    and
+                    for you to get to know me better.
+                </p>
+            </section>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <img src="{{ url_for('static', filename='images/webPhoto.jpg') }}" alt="webPhoto.jpg" class="front-photo">
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div
+            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <br>
+            <br>
+            <p> I am an undergraduate majoring in Computer Science at Mount Holyoke College. I am yet to graduate in
+                December 2025. I am very passionate about tennis as I have been playing the sport since I was 3 years
+                old. I love computer science because of what I do. I am able to create things from scratch and see them
+                come to life. I love to learn new things to expand my skill set and technical know-how. Giving up is
+                never an option because with determination, I will achieve what I set my mind to. </p>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div
+            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <div class="contact-item">
+                    <p>Email me <a href="mailto:quaye22d@mtholyoke.edu">here</a></p>
+                    <img src="{{ url_for('static', filename='images/email.jpg') }}" alt="email.jpg"
+                        class="contact-image">
+                </div>
+                <div class="contact-item">
+                    <p>My GitHub <a href="https://github.com/Okailey">here</a></p>
+                    <img src="{{ url_for('static', filename='images/githublogo.png') }}" alt="githublogo.png"
+                        class="contact-image">
+                </div>
+                <div class="contact-item">
+                    <p>My LinkedIn, let's connect <a href="https://www.linkedin.com/in/danielle-quaye"
+                            target="_blank">here</a></p>
+                    <img src="{{ url_for('static', filename='images/linkLogo.png') }}" alt="linkLogo.png"
+                        class="contact-image">
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="theFooter">
+            <footer>
+                <p1> Danielle Quaye</p1>
+            </footer>
+        </div>
+
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var footer = document.querySelector('.theFooter');
+
+                window.addEventListener('scroll', function () {
+                    // Calculate how far the user has scrolled
+                    var scrollPosition = window.innerHeight + window.pageYOffset;
+                    var bodyHeight = document.body.offsetHeight;
+
+                    // If the user has scrolled to the bottom of the page, show the footer
+                    if (scrollPosition >= bodyHeight) {
+                        footer.classList.add('footer-visible');
+                    } else {
+                        footer.classList.remove('footer-visible');
+                    }
+                });
+            });
+        </script>
+    </body>
+
+    </html>

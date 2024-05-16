@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href=""> -->
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="menuBar">
+        <a href="/">Home</a>
+
+        <a href="/designManifesto"> Design Manifesto</a>
+        <a href="/#contact">Contact me</a>
+
+        <!-- <a href="/projects">Projects</a> -->
+        <!-- <a href="/projectsList">Project List</a> -->
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <div>
+        <br>
+
+        <h3 class="title">Human-Computer Interaction Projects</h3>
+        <ul class="projects-list">
+            <li>
+            <li class="center">
+                <a href="/project1.html">
+                    <img src="{{ url_for('static', filename='images/P1.png') }}" alt="Project 1">
+                    <span>Designing For Other People</span>
+                </a>
+            </li>
+
+            <li class="center">
+                <a href="/project2.html">
+                    <img src="{{ url_for('static', filename='images/P2.png') }}" alt="Project 2">
+                    <span>(Re)Designing For Other People</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/project3.html">
+                    <img src="{{ url_for('static', filename='images/P3.png') }}" alt="Project 3">
+                    <span>Designing For A Community</span>
+                </a>
+            </li>
+
+            <li class="center">
+                <a href="/project4.html">
+                    <img src="{{ url_for('static', filename='images/P4.png') }}" alt="Project 4">
+                    <span>Seeking & Integrating Feedback</span>
+                </a>
+            </li>
+
+            <li class="center">
+                <a href="/project5.html">
+                    <img src="{{ url_for('static', filename='images/P5.png') }}" alt="Project 5">
+                    <span>Inspired By A True Story</span>
+                </a>
+            </li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>
