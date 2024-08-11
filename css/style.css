@@ -1,0 +1,320 @@
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.menuBar {
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: right; */
+    border-bottom: 2px solid #ccc;
+    text-align: right;
+}
+
+.menuBar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 21px;
+    padding: 10px 10px;
+    margin: 0px 5px;
+    transition: background-color 0.3s ease;
+
+    /* margin-left: auto; */
+}
+
+.menuBar a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+
+}
+
+
+p {
+    font-size: 20px;
+    /* Set the font size of paragraphs */
+    margin: 0 auto;
+    /* Center align the paragraphs */
+    max-width: 750px;
+    /* Set maximum width for the paragraphs */
+    font-family: Palatino;
+    line-height: 1.5
+}
+
+.image-first {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.image-third {
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+.image-fourth {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.image-fifth {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.image-con {
+    text-align: center;
+    /* Center-align the image within the div */
+}
+
+.image-sixth {
+    display: inline-block;
+    /* Keeps the image as inline-block to center it */
+    max-width: 100%;
+    /* Ensures the image scales with the container */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.image-twoContainer {
+    display: flex;
+
+
+}
+
+.image-twoContainer img {
+    margin-right: 10px;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    /* Adjust as needed */
+}
+
+.image-Container {
+    display: flex;
+
+}
+
+.image-threeContainer {
+    display: flex;
+
+}
+
+.image-threeContainer img {
+    margin-right: 10px;
+    height: auto;
+    width: 700px;
+    margin: 0 auto;
+    /* Adjust as needed */
+}
+
+.image-Container img {
+    /* margin-right: 8px; */
+    height: auto;
+    width: 300px;
+    margin: 0 auto;
+    /* Adjust as needed */
+}
+
+.front-photo {
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+    max-width: 80%;
+
+}
+
+.front-photo img {
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+.theFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #1c1616;
+    z-index: 10;
+    transition: opacity 0.1s ease;
+    /* Add transition for opacity */
+    opacity: 0;
+    /* Initially hide the footer */
+}
+
+p1 {
+    font-size: 16;
+    color: white;
+}
+
+.footer-visible {
+    opacity: 1;
+    /* Make the footer visible */
+}
+
+
+
+.projects-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16;
+    font-family: Palatino;
+    color: black;
+
+
+}
+
+.projects-list li {
+    margin-bottom: 20px;
+    /* Adjust the spacing between the rows */
+    text-align: center;
+}
+
+.projects-list li.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.projects-list img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #0e03038a;
+    /* Change the color and thickness as desired */
+    border-radius: 20px;
+    /* Optional: Adds rounded corners */
+    width: 250px;
+    /* Set the width to your desired size */
+    height: 200px;
+    /* Set the height to your desired size */
+    transition: transform 0.3s ease;
+}
+
+.projects-list img:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as desired */
+}
+
+.projects-list li span {
+    display: block;
+    margin-top: 10px;
+    /* Adjust the spacing between the image and text */
+}
+
+@media (max-width: 992px) {
+    .projects-list li {
+        width: calc(45% - 20px);
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-list li {
+        width: calc(100% - 20px);
+        /* Set width to full for smaller screens */
+    }
+}
+
+.title {
+    text-align: center;
+    font-family: Palatino;
+    font-size: 30px;
+}
+
+/* Numbered list style */
+ol {
+    margin-left: 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* List item style */
+li {
+    margin-bottom: 5px;
+}
+
+/* Blockquote style */
+blockquote {
+    font-style: italic;
+    color: #888;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+/* Emphasized text style */
+em {
+    font-style: italic;
+    color: #6122ff;
+}
+
+/* Line break style */
+br {
+    display: block;
+    margin: 10px 0;
+    content: "";
+}
+
+#contact {
+    margin-bottom: 100px;
+    /* Adjust the value as needed */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-image {
+    width: 100px;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: 10px;
+    /* Add spacing */
+}
