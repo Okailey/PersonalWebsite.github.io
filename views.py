@@ -7,11 +7,11 @@ views = Blueprint(__name__, "views")
 def homePage():
     return render_template('homepage.html')
 
-@views.route('/projects')
+@views.route('/projects.html')
 def projectPage():
     return render_template('projects.html')
 
-@views.route('/designManifesto')
+@views.route('/designManifesto.html')
 def projectListPage():
     return render_template('designManifesto.html')
 
@@ -34,3 +34,27 @@ def projectPage4():
 @views.route('/project5.html')
 def projectPage5():
     return render_template('project5.html')
+
+@views.route('/projectwordle.html')
+def projectwordlePage():
+    return render_template('projectwordle.html')
+
+@views.route('/AboutMe.html')
+def aboutme():
+    return render_template('AboutMe.html')
+
+@views.route('/spotivibe.html')
+def spotivibe():
+    return render_template('spotivibe.html')
+
+@views.route('/reciMe.html')
+def recimePage():
+    return render_template('reciMe.html')
+
+@views.route('/clony.html')
+def clonyPage():
+    return render_template('clony.html')
+
+@views.route('/lingomates.html')
+def lingomatesPage():
+    return render_template('lingomates.html')
