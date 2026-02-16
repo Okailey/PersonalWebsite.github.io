@@ -1,49 +1,58 @@
-<<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-    <html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <div class="menuBar">
-            <a href="/">Home</a>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-            <a href="/designManifesto"> Design Manifesto</a>
-            <a href="/projects">Projects</a>
-            <a href="/#contact">Contact me</a>
-        </div>
-        <div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>A Design Manifesto: What I took out of HCI </h2>
-        </div>
-        <br>
+<body class="bg-white text-gray-900 font-sans">
 
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!--Sidebar nav-->
+    <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+        <nav class="flex flex-col space-y-4">
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#key" class="hover:text-blue-600">Key Takeaways</a>
+        <a href="#rightquestions" class="hover:text-blue-600">Right Questions</a>
+        <a href="#cherish" class="hover:text-blue-600">Cherishing Design</a>
+        <a href="#user" class="hover:text-blue-600">User's Needs</a>
+        <a href="#utilizing" class="hover:text-blue-600">Utilizing Visual Hierarchy</a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+   <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+    <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+        <h1 class="text-3xl font-bold text-center">A DESIGN MANIFESTO: WHAT I TOOK OUT OF HCI </h1>
         <p>
-            <br>
-            <br>
             Human-Computer Interaction is a multidisciplinary field that studies the interaction between humans and
-            computers, with emphasis on designing technology that enhances the <strong> user experience.</strong>
-            <br>
-            <br>
-
-        <p>
+            computers, with emphasis on designing technology that enhances the <span class="text-black-600 font-semibold">user
+                experience.</span>
+        </p>
+         <p>
             As someone profoundly zealous about both design and technology, I was elated to take this class. My initial
             thought when I decided to take this class was that I was just going to see how computers and humans
             interacted.
@@ -51,76 +60,56 @@
             audience
             with the main goal of improving user experience.
         </p>
-
-        <br>
-
-        <p>Over the course of the semester, I engaged in five different projects that helped me to dive into the
-            different
-            questions involving Human-Computer Interaction.
-            <br>
+         <p>
+            Over the course of the semester, I engaged in five different projects that helped me to dive into the
+            different questions involving Human-Computer Interaction.
+         
             They are:
-            <br>
-            How do we figure out what real people need?
-            <br>
-            How do we design tools that fit needs (and don’t suck)?
-            <br>
-            How do we know if we did a good job?
-            <br>
-            How did we get here (& where are we going)?
-            <br>
-            <br>
+             </p>
+           <ul class="list-disc list-inside space-y-2">
+  <li>How do we figure out what real people need?</li>
+  <li>How do we design tools that fit needs (and don’t suck)?</li>
+  <li>How do we know if we did a good job?</li>
+  <li>How did we get here (& where are we going)?</li>
+</ul>
+
+       
+         <p>
             Given that I spent a whole semester learning about Human-Computer Interaction, I will give an overview of
             how my
             perspective of HCI changed throughout the semester and share my key takeaways from this course.
-        </p>
-        <br>
-        <br>
-        <br>
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+         </p>
+    </section>
 
+<!--KEY TAKEAWAYS-->
+    <section id="key" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> MY KEY TAKEAWAYS</h2>
+        <h3 class="text-xl font-semibold text-center"> Defining Goals and Setting Ideation in</h3>
 
-
-        <h2> My key takeaways</h2>
-        <br>
-
-        <br>
-
-        <h1> Defining goals and setting ideation in
-        </h1>
-        <br>
-        <br>
-
-
-        <p> The first thing I learned in this class was to appreciate the double diamond design process.
+        <p>
+            The first thing I learned in this class was to appreciate the double diamond design process.
             It is important to clearly define the goal you are trying to achieve and the audience you are aiming for. I
             relied heavily on the first two stages of the double diamond design process for the first two weeks of class
             as
-            we spent time talking about <strong><i>how to figure out what people need</i> </strong>. This delved into
+            we spent time talking about <span class=" font-semibold">how to figure out what people need</span>. This delved into
             the
             introduction of
-            creating a
-            persona with a goal and a set of challenges preventing them from achieving that goal.
-            <br>
-            <br>
-            <img src="{{ url_for('static', filename='images/DD.jpeg') }}" alt="DD.jpeg" class="image-first">
-        </p>
+            <span class="italic text">creating a persona with a goal and challenges is key in the process of
+                ideation.</span>
+                </p>
+             <div class="flex justify-center my-6">
+            <img src="{{ url_for('static', filename='images/DD.jpeg') }}" alt="Diagram of the double diamond design process" class="max-w-full md:max-w-md">
+           </div>
+     
 
-        <br>
-        <br>
-
-        <p> For my first project - <em>Designing for Other People</em>, I was tasked with coming up with an
+         <p>
+             For my first project - <span class="italic text-blue-600 font-semibold">Designing for Other People</span>, I was tasked with
+            coming up with an
             idea for an app that
             could help overcome a challenge that the people in my life were facing. I identified some goals but because
             I
             spoke to different people, the number of goals and frustrations increased. I fulfilled the
-            <strong><i>discover</i></strong> aspect
+            <span class="font-semibold">discover</span> aspect
             of
             the double diamond. It was really easy for me to set an audience for my designs but relatively harder to
             narrow
@@ -128,36 +117,32 @@
             be
             centered around. I narrowed it down to 2 goals and 5 challenges.
         </p>
-        <br>
-        <br>
-
-        <p> Now, I had to set in motion the ideas I had in mind to find the best design. This dealt heavily with the
+        <p>
+            Now, I had to set in motion the ideas I had in mind to find the best design. This dealt heavily with the
             ideation stage of HCI design process. I will say right now that sketches are the way to go when you start
             brainstorming about an idea you want to see come to life. It is easier to sketch and your ideas and see them
             in
             front of you before going to implement it later. I say this because if you dive into implementing the design
             straight away, you are bound to waste more time trying to figure out what to do when you could have sketched
-            them out then decide on a design and then implement. This fulfilled the <strong><i>design</i></strong>
+            them out then decide on a design and then implement. This fulfilled the <span class="italic font-semibold">design</span> aspect of the double diamond.
             aspect of the double diamond.
-
-            <br>
-            <br>
-            Looking at these sketches from <em>Designing for Other People</em>, I was able to quickly decide which
+        </p>
+        <p>
+            Looking at these sketches from <span class="italic text-blue-600 font-semibold">Designing for Other People</span>, I was able to quickly decide which
             aspects of my
             sketches I loved most and from there talk extensively about it. From here, I can easily open Figma and bring
             all
             my ideas into one in no time.
         </p>
-        <br>
-        <br>
-        <br>
-        <br>
 
-        <h1>Right Questions & Feedback are the heart of HCI </h1>
-        <br>
-        <br>
-        <p> How you ask questions determine the kind of feedback you receive and there are no two ways about it. This
-            answers the question <strong><i> “How do we know if we did a good job?”</i></strong>.
+    </section>
+
+    <section id="rightquestions" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class ="text-2xl font-bold text-center">RIGHT QUESTIONS & FEEDBACK ARE THE HEART OF HCI </h2>
+
+         <p>
+            How you ask questions determine the kind of feedback you receive and there are no two ways about it. This
+            answers the question <span class="italic text">“How do we know if we did a good job?”</span>.
             Throughout all my projects, one thing I have constantly had to do was to ask good questions in order to get
             great responses to carry out a design or great feedback to improve upon a design. I know I have to ask
             people
@@ -167,67 +152,66 @@
             and
             have made it available for users to interact with it, you ask good questions to try and get their feelings
             and
-            reactions to the product. Users usually catch on to the little things and that will help you to improve on
+            reactions to the product. 
+              </p>
+              <p> Users usually catch on to the little things and that will help you to improve on
             the
-            product as well. For my fourth project - <em> Seeking & Integrating Feedback</em>, I redesigned a website I
+            product as well. For my fourth project - <span class="italic text-blue-600 font-semibold">Seeking & Integrating Feedback</span>, I redesigned a website I
             had
             previously
             designed based off of feedback I got from users through the use of surveys. It was really important that I
             asked
             the right questions.
         </p>
-        <br>
-        <br>
 
-        <p> There are some questions you must avoid in your surveys if you want in-depth feedback
-            <br>
-            <br>
-            <strong> 1. Avoid “multi barreled questions</strong>
-            <br>
+
+        <p>
+             There are some questions you must avoid in your surveys if you want in-depth feedback </p>
+             <ul class="list-disc list-inside space-y-2">
+            <li><span class="text-black-600 font-semibold">
+            
+                Avoid multi barreled questions</span></li>
+            
             To get feedback for a specified aspect of prototype or design, you must make sure your questions are clear
             especially when the person/people you are asking are not with you to ask clarifying questions. It is always
             good
-            to ask, “When do you eat breakfast?” than “when do you eat breakfast and dinner?”. An answer to the second
-            question may be 3pm and you would not know which of the parts of the question It is answering and hence this
+            to ask, <span class="italic">“When do you eat breakfast?”</span> than <span class="italic">“when do you eat breakfast and dinner?”</span>. An answer to the second
+            question may be 3pm and you would not know which of the parts of the question it is answering and hence this
             feedback does not mean much.
-            <br>
-            <br>
-
-            <strong> 2. You should try to avoid leading questions</strong>
-            <br>
+            
+ 
+            <li>  <span class="text-black-600 font-semibold"> You should try to avoid leading questions</span></li>
+          
             You should never assume anything for anyone. Leading questions can sometimes make the user want to respond
             with
             answers that they think the designer will prefer to see than what they actually want to say.
             If I ask, “was our service helpful today?”, it implies that you are assuming the service was helpful when in
             actual fact it could have been very unhelpful.
 
-            <br>
-            <br>
-            <strong> 3. Explanation is key </strong>
-            <br>
+            <li> <span class="text-black-600 font-semibold"> Explanation is key </span></li>
+          
             It is always good to explain or define terms if you are aware, it may have different meanings for
             different
             people and always keep questions relatively short.
+            </ul>
 
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
 
-        <h1> Cherishing The Iterative Nature of Design</h1>
-        <br>
-        <br>
-        <p> <i> There is no end to design but rather always room for improvement</i>. Our world is rapidly changing and
+    </section>
+
+    <section id="cherish" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> CHERISHING THE ITERATIVE NATURE OF DESIGN</h2>
+        <p>
+            <span class="italic text-green-600 font-semibold">There is no end to design but rather always room for improvement</span>. Our world is rapidly changing and
             so must
             our
             designs. Design is never a done deal as it is always evolving. Once we create a design and send it off for
             feedback, we must act on the given feedback to improve the design to better cater for the specified audience
             the
-            design was meant for.</p>
-        <br>
-        <br>
-        <p> For my fourth project -<em> Seeking & Integrating Feedback</em> as mentioned before, I redesigned a
+            design was meant for.
+        </p>
+    
+        <p>
+             For my fourth project -<span class="italic text-blue-600 font-semibold">Seeking & Integrating Feedback</span> as mentioned before, I redesigned a
             prototype I had previously
             designed
             and
@@ -244,44 +228,38 @@
             designed to make them better. I did not say “even though I have gotten feedback, I will stick with my design
             as
             it seems great to me”. I can design today and come up with a better design tomorrow or 10 days from now. In
-            short, design is not <strong> STATIC</strong>. </p>
-        <br>
-        <br>
-        <p>On the left was the first design I made and on the right was the second design I made after the feedback.
-        </p>
-        <br>
-        <br>
-        <div class="image-Container">
-            <img src="{{ url_for('static', filename='images/TM1.png') }}" alt="TM1.png">
-            <img src="{{ url_for('static', filename='images/TM2.png') }}" alt="TM2.png">
-            <br>
-            <br>
+            short, design is not <span class="font-semibold">STATIC</span>. </p>
 
-        </div>
-        <br>
-        <br>
-        <p> The use of the drop-down menu was not as feasible because it had some lags and clicking did not take you
+         <p>
+            On the left was the first design I made and on the right was the second design I made after the feedback.
+        </p>
+     <div class="flex flex-col md:flex-row gap-4 justify-center items-center my-6">
+    <img src="{{ url_for('static', filename='images/TM1.png') }}" alt="First iPhone prototype design before user feedback" class="max-w-full md:max-w-xs ">
+    <img src="{{ url_for('static', filename='images/TM2.png') }}" alt="Second iPhone prototype design after user feedback" class="max-w-full md:max-w-xs ">
+</div>
+
+      
+         <p>
+            The use of the drop-down menu was not as feasible because it had some lags and clicking did not take you
             to
             the correct category you chose.
         </p>
+    </section>
 
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <h1> Meeting the user’s needs</h1>
-        <br>
-        <br>
+       <section id="user" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">MEETING THE USER'S NEEDS</h2>
+     
         <p> Human-Computer interaction is all about boosting user experience and meeting the needs of the users by
             designing
-            technology that will impact the users in a positive way. So, going back to the question <strong> <i>“How do
+            technology that will impact the users in a positive way. So, going back to the question <span class="itaic text">“How do
                     we know if
                     we
-                    did a good job?” </i></strong>. To answer this question, we will talk about cognitive walkthroughs
+                    did a good job?”</span>. To answer this question, we will talk about cognitive walkthroughs
             and heuristic
             evaluations.
-            <br>
+        </p>
+        <p>
+      
             A cognitive walkthrough involves defining a task, letting the designer step through the task, and then
             allowing
             the user to step through the task as well. These walkthroughs access the learnability of a system. Let’s
@@ -290,34 +268,37 @@
             continuously or will she eventually learn and will it be easy or hard for her. If it turns out to be hard,
             then the system must be reevaluated to allow for some improvements because the goal of a cognitive
             walkthrough is always to make sure the system is easily accessible by an audience.
+</p>
 
-            <br>
-            <br>
-            <img src="{{ url_for('static', filename='images/CW.png') }}" alt="CW.png">
-        </p>
-        <br>
-        <br>
-        <p> This is a cognitive walkthrough I did for <em>Seeking & Integrating Feedback</em>. From the image above, we
+ <div class="flex justify-center my-8">
+            <img src="{{ url_for('static', filename='images/CW.png') }}" alt="Cognitive walkthrough diagram" class="w-full md:w-2/3 lg:w-2/4">
+            </div> 
+
+       
+        <p> 
+            This is a cognitive walkthrough I did for <span class="italic text-blue-600 font-semibold">Seeking & Integrating Feedback</span>. From the image above, we
             can see
             that
             I stepped through the defined task with the defined set of questions. These are the questions that are
             always
             going to be asked for a cognitive walkthrough no matter the system</p>
-        <br>
-        <br>
-        <p>
+        
+             <p>
             Now for the heuristic evaluation. It is a metric which helps in identifying design problems in a user
             interface.
             It helps evaluators judge the design/ system against a set of guidelines called heuristics. Read more about
             them <a href="https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/">
                 here.</a>
-            <br>
+            </p>
+            <p>
+        
             I was mostly using Jakob Nielsen’s 10 usability <a
                 href="https://www.nngroup.com/articles/ten-usability-heuristics/">heuristics</a>. If the system is
             usable,
             how are you determining it? What set of heuristics are you evaluating it against? Once you have answered
             these questions and your system / design checks out then it is usable. <br>
-            <br>
+            </p>
+            <p>
             Now, to the answer the question. If the system is usable and assessing learnability is easy, then we
             know we
             did
@@ -328,12 +309,12 @@
             system to
             be modified.
         </p>
-        <br>
-        <br>
-        <h1>Utilize visual hierarchy</h1>
-        <br>
-        <br>
-        <p>Understanding visual hierarchy is necessary if you want to have an efficient design. <a
+        </section>
+
+        <section id="utilizing" class="space-y-6 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">UTILIZING VISUAL HIERARCHY</h2>
+        <p>
+            Understanding visual hierarchy is necessary if you want to have an efficient design. <a
                 href="https://www.toptal.com/designers/ui/gestalt-principles-of-design">Gestalt’s principles</a>
             can really help when designing for an audience. As we know, many people cannot pay attention to too many
             things
@@ -343,99 +324,77 @@
             information holds more importance than others so placing that information first will draw users attention to
             it.
         </p>
-        <br>
-        <br>
-        <div class="image-threeContainer">
-            <img src="{{ url_for('static', filename='images/GP.png') }}" alt="GP.png">
+      
+       <div class="flex justify-center my-20">
+            <img src="{{ url_for('static', filename='images/GP.png') }}" alt="Gestalt principles diagram" class="w-full md:w-2/3 lg:w-3/4 ">
         </div>
-        <br>
-        <br>
-        <p> In that, what feelings am I trying to get out of the audience? What should be engraved in their minds? With
+      
+        <p>
+            In that, what feelings am I trying to get out of the audience? What should be engraved in their minds? With
             the
             help of colors, sizes, placement, and movement, it can happen. </p>
-        <br>
-        <br>
-        <div class="image-twoContainer">
-            <img src="{{ url_for('static', filename='images/CE.jpg') }}" alt="CE.jpg">
+   
+        <div class="flex justify-center my-8">
+            <img src="{{ url_for('static', filename='images/CE.jpg') }}" alt="Color and Emotion in Design" class="w-full md:w-2/3 lg:w-3/4">
         </div>
-        <br>
-        <br>
-        <br>
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
+      
+        </section>
 
-        <h1>
-            How did I get here (& where am I going)?
-        </h1>
-        <br>
-        <br>
-
-        <br>
+        <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-center"> CONCLUSION </h2>
+            <h3 class="text-xl font-semibold text-center"> HOW DID I GET HERE (& WHERE AM I GOING)?</h3>
         <p> I love designing and for all my projects, I was tasked to design a tool/prototype in Figma. From the
             inspiration of an idea that was captured in the form of sketches to implementing a finished prototype was
             worth it. Using the 7 principles of design as my backbone, I prioritized every single project and poured out
             my best for it and they paid off in the end.
-            <br>
-            <br>
+        </p>
+        <p> 
             Amid the joyous achievements, a topic that was most challenging was reading HCI research papers. In my
             honest opinion, finding a good research paper that catches the eye to make you want to read the paper
             thoroughly is truly a hassle especially for a beginner. I could read multiple abstracts and find them
             interesting but once I start to skim through the contents, I quickly lose interest.
-            <br>
-            <br>
-            For my fifth project - <em> Inspired by a True Story/Paper</em>, I was tasked to find a paper and design a
+           </p>
+        <p >
+            For my fifth project - <span class="italic text-blue-600 font-semibold"> Inspired by a True Story/Paper</span>, I was tasked to find a paper and design a
             prototype
             in Figma that was inspired by the design requirements or problem statement described in the paper I chose. I
             persevered, read through the paper and all I can say is that it was worth it in the end because now I can
             say I can read a research paper and dissect it to find the important information I need at a given time.
             This will also help me with future endeavors involving research as I know the basics to build upon it.
-            <br>
-            <br>
+            </p>
+            <p> 
             A valuable piece of HCI for me would be to redesign for my audience after collecting their feedback. Was it
             easy to learn? Was it hard? It is not always about the aesthetics of a design but also how people can easily
             navigate the system with little to no problem.
-            <br>
-            <br>
+            </p>
             By employing human-centered design principles, prioritizing feedback while incorporating design iteration
             and understanding visual hierarchy, I am more aware of the powerful tools I possess to make even better
             systems in the near future to meet every user’s needs.
 
+           
+           
         </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="theFooter">
-            <footer>
-                <p1> Danielle Quaye</p1>
-            </footer>
-        </div>
+        </section>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var footer = document.querySelector('.theFooter');
 
-                window.addEventListener('scroll', function () {
-                    // Calculate how far the user has scrolled
-                    var scrollPosition = window.innerHeight + window.pageYOffset;
-                    var bodyHeight = document.body.offsetHeight;
 
-                    // If the user has scrolled to the bottom of the page, show the footer
-                    if (scrollPosition >= bodyHeight) {
-                        footer.classList.add('footer-visible');
-                    } else {
-                        footer.classList.remove('footer-visible');
-                    }
-                });
-            });
-        </script>
-    </body>
+  <section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
 
-    </html>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+     </article>
+     <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+</body>
+
+</html>

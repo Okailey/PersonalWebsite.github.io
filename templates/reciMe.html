@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+      <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
+
+        <nav class="flex flex-col space-y-4">
+
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#results" class="hover:text-blue-600">Results</a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+
+        </nav>
+    </aside>
+    <!-- Main content -->
+    <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+
+    <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+  <h2 class="text-3xl font-bold text-center">ReciMe: YOUR FAVORITE RECIPE FINDER</h2>
+  <p class="text-center text-lg italic text-green-600">Find exactly what you’re craving — no preamble, no frills. Just what you want.</p>
+
+    <p>
+      Born out of the love for good food and the frustration of scattered, unreliable recipe platforms, ReciMe combines the power of the Edamam API—bringing you official, nutrition-backed recipes from top sources—with the creativity and community of user-generated recipes stored securely on Firebase.
+    </p>
+</section>
+
+  <!-- Features -->
+ <section id="features" class="space-y-4 mt-12 scroll-mt-24">
+    <h3 class="text-2xl font-bold text-center">APP FEATURES</h3>
+<p> The app consists of several key features that make it a powerful and user-friendly recipe platform:</p>
+    <ul class="list-inside space-y-2">
+      <li>⭐<strong>Home Page</strong></li>
+      <li>⭐<strong>Recipe Page</strong></li>
+      <li>⭐<strong>Recipe Details</strong></li>
+      <li>⭐<strong>Admin Abilities</strong></li>
+      <li>⭐<strong>Create Recipes</strong></li>
+      <li>⭐<strong>My Recipes</strong></li>
+    </ul>
+
+
+        <p> For the <span class="font-bold text-green-600">Recipe Page</span>, users can view available recipes, sort recipes based on category 
+            (health labels, cuisine types, ingredients, instructions, etc.), and toggle between Edamam API recipes and community (user-created) recipes.</p>
+
+      <p> For the <span class="font-bold text-green-600">Recipe Details Page</span>, users can view detailed information about each recipe including health labels, cuisine types, ingredients, instructions, etc.
+        Leave ratings, read reviews and receive assistance from a chatbot.</p>
+
+    <p> For the <span class="font-bold text-green-600">My Recipes Page</span>, users can view their created and saved recipes, read reviews and leave ratings and reviews and have a quick link to the Create Recipe form.</p>
+
+      <p> For the <span class="font-bold text-green-600">Create Recipes Page</span>, users can create new recipes with required fields like name, ingredients, and instructions. They can also add optional information like labels, description, and image. Upon successful creation, a toast notification is displayed.</p>
+
+      <p> The <span class="font-bold text-green-600">Admin Page</span> allows administrators to manage user-generated recipes. From there, an admin can view unapproved recipes and choose to verify and publish them.</p>
+</section>
+   
+
+  <!-- What You Worked On / Skills Gained -->
+   <section id="results" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">WHAT I WORKED ON</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li><strong>Sort Recipes:</strong> Implemented sorting by category, health labels, ingredients, and instructions.</li>
+      <li><strong>Edamam API Integration:</strong> Fetched recipes and allowed toggling between API and community recipes.</li>
+        <li><strong>View Recipes:</strong> Allowed the display of 20 recipes per view and refresh results dynamically for improved data handling and user experience.</li>
+    </ul>
+</section>
+
+  <!-- Analysis -->
+<section id="analysis" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">PROJECT ANALYSIS</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li><strong>Technologies Used:</strong> JavaScript, React</li>
+      <li><strong>APIs Integrated:</strong> Edamam Recipe Search API for official recipes</li>
+      <li><strong>Database Management:</strong> Firebase Firestore for user-generated recipes and user data</li>
+      <li><strong>UI/UX Design:</strong> Material UI for responsive design and intuitive user experience</li>
+    </ul>
+
+    <p> <strong>Strengths</strong> </p>
+    <ul class="list-disc list-inside space-y-1">
+        <li> The UX on this project is very intuitive and allows the user to get a true grasp of every recipe, as well as all the necessary information
+<li> The project is easily scalable, allowing for the implementation of more features </li>
+<li> Toasts which provide quick notifications without disrupting the user’s interaction flow</li>
+    </ul>
+
+    <p><strong>Weaknesses</strong></p>
+    <ul class="list-disc list-inside space-y-1">
+      <li> Edamam recipes were not given the ability to leave reviews or chatbot access. </li>
+      <li> Passwords on the database are currently being stored as text objects and are not being encrypted before storage </li>
+    </ul>
+    <p><strong>Opportunities for Improvement</strong></p>
+    <ul class="list-disc list-inside space-y-1">
+      <li> Lazy Loading: with more and more community recipes available it would be more efficient to load a small subset rather than the entire database each query
+</li>
+      <li>
+Could save recipe images in the Firebase Storage so that users are able to upload recipe images.</li>
+
+    </ul>
+    </section>
+
+  <!-- Conclusion -->
+  <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+    <h3 class="text-2xl font-bold text-center">CONCLUSION</h3>
+    <p>
+      ReciMe is a robust, intuitive recipe platform combining official API recipes with community contributions. 
+      Through this project, I strengthened my skills in API integration, UI/UX design, Firebase database management, and building scalable features while ensuring a smooth, engaging user experience.
+    </p>
+  </section>
+
+
+
+<section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </article>
+<!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+
+</body>
+
+
+</html>

@@ -1,125 +1,154 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <div class="menuBar">
-        <a href="/">Home</a>
-        <a href="/designManifesto"> Design Manifesto</a>
-        <a href="/projects">Projects</a>
-        <a href="/#contact">Contact me</a>
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
     </div>
+  </nav>
+    </header>
 
+      <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
 
-    <div>
-        <br>
-        <br>
-        <br>
-        <h2>WORDLE</h2>
-        <br>
-        <h2>INTRODUCTION</h2>
-        <br>
+        <nav class="flex flex-col space-y-4">
+
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#process" class="hover:text-blue-600">Process</a>
+        <a href="#results" class="hover:text-blue-600">Results</a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+
+        </nav>
+    </aside>
+
+   <!-- Main Content -->
+   <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+    <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+        <h1 class="text-3xl font-bold text-center">WORDLE</h1>
         <p>
+            <strong>I gained several key skills, which include:</strong> </p>
+           
+            <ul class="list-disc list-inside space-y-2">
+  <li>
+    <strong>Problem Solving:</strong> Solved complex issues like managing UI constraints for the keyboard and
+    grid, handling letter placement, and validating guesses with color changes.
+  </li>
+  <li>
+    <strong>Bug Fixing and Optimization:</strong> Troubleshot issues like incorrect color updates and
+    validation of words to optimal performance.
+  </li>
+  <li>
+    <strong>Adaptability:</strong> When some implementations were not working, I was able to quickly switch
+    to graphics components.
+  </li>
+  <li>
+    <strong>Teamwork:</strong> Collaborated and communicated effectively with my partner to split
+    responsibilities and to provide help to each other when needed.
+  </li>
+  <li>
+    <strong>MVC Architecture:</strong> Learnt how to organize a project into Model-View-Controller
+    (MVC) components in a software application for easier maintenance and
+    development.
+  </li>
+</ul>
+<p> 
+
             For this project, I teamed up with a partner to complete it. The task was both simple and complex: creating
             a Wordle game that resembles the New York Times version.
-            <br>
+          
             In object-oriented design, when building a piece of software, there are a few ways to begin:
-            <br>
-            <br>
-            • By examining a description of the desired software, called a requirements document, or a description of
+   </p>
+   <ul class="list-disc list-inside space-y-2">
+<li> 
+             By examining a description of the desired software, called a requirements document, or a description of
             the physical system.
-            <br>
-            • By reverse engineering an existing implementation.
-            <br>
-            <br>
-        </p>
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-        </div>
-        <br>
-        <br>
-        <h2>PROCESS</h2>
-        <br>
-        <br>
+        </li>
+            <li> By reverse engineering an existing implementation.
+         </li> 
+         </ul>
+
+</section>
+
+
+<section id="process" class="space-y-4 mt-12 scroll-mt-24">
+
+        <h2 class="text-2xl font-bold text-center">PROCESS</h2>
         <p>
             For the first part of this task, we had to identify classes and create a UML diagram, which would help with
             delegating some specific classes to the MVC (Model-View-Controller) architecture.
-            <br>
         </p>
-        <div class="image-con">
-            <img src="{{ url_for('static', filename='images/ss1.png') }}" alt="ss1" class="image-first">
-        </div>
-        <br>
+ <div class="flex justify-center items-center my-6">
+        <img src="{{ url_for('static', filename='images/ss1.png') }}" alt="drawing of UML diagram" class="w-full md:w-2/3 lg:w-2/4">
+</div>
+  
         <p> Initially, some classes were well-placed in terms of their architecture, but there was a challenge in
             figuring out how the model and controller would communicate without the view.
-            <br>
-            <br>
-            I was in charge of the view component and the controller component of the task. My job was to create the UI
-            for the Wordle game and to make it as similar as possible to the New York Times version. I had learned a bit
+           
+            I was in charge of the view component and the controller component of the task. <strong>My job was to create
+                the UI
+                for the Wordle game and to make it as similar as possible to the New York Times version. </strong> I had
+            learned a bit
             about JComponents and graphics for Java in Eclipse, so it provided some useful references. I initially used
             JButtons for the keyboard outline and display, but it proved to be a bit difficult because I could not get
             the color to change to a gray undertone, which was the minimum needed for the keyboard to look similar.
-            <br>
-            <br>
+         </p>
+         <p>
             I moved on to graphics components, which was a bit more challenging due to the precision needed for each
             character box. I achieved a good layout, but it was not exactly like the New York Times version. It was
             difficult to manage the constraints for the keyboard graphics to ensure that when a letter was clicked, it
             did not go out of bounds or display another letter. After some adjustments, I managed to keep everything
             within the constraints of the overall keyboard rectangle.
-            <br>
-            <br>
-            <br>
-            <br>
-        </p>
-        <div class="image-con">
-            <img src="{{ url_for('static', filename='images/ss2.png') }}" alt="ss2" class="image-sixth">
-            <br>
-            <br>
-            <p> This is what my view for the keyboard layout looks like above.</p>
-            <br>
-            <br>
-            <img src="{{ url_for('static', filename='images/ss3.png') }}" alt="ss3" class="image-sixth">
-            <br>
-            <br>
+            </p>
+<div class="flex justify-center items-center my-6">
+        <img src="{{ url_for('static', filename='images/ss2.png') }}" alt="ss2" class="w-full md:w-2/3 lg:w-2/4">
         </div>
-        <br>
-        <br>
-        <p> This is the New York Times keyboard layout. I opted for ASCII keys for the Enter and Backspace instead.</p>
-        <br>
-        <p>
+      
+        <p> This is what my view for the keyboard layout looks like above.</p>
+      <div class="flex justify-center items-center my-6">
+        <img src="{{ url_for('static', filename='images/ss3.png') }}" alt="ss3" class="w-full md:w-2/3 lg:w-2/4">
+        </div>
+       
+        <p> This is the New York Times keyboard layout. I opted for ASCII keys for the Enter and Backspace instead.
             The next thing I planned was to draw the grid layout so that words would appear when a key on the keyboard
             is pressed. I used graphics to draw the grid, and it turned out well, resembling the one from the New York
             Times.
         </p>
-        <br>
+
         <p> The next step was to ensure that once the game started and a player clicked on a keyboard key, the letter
             appeared on the grid, and when the Backspace key was clicked, the current letter was deleted. It was fairly
             easy to manage the appearance of the letter on the grid once it was pressed, as well as the Backspace key.
             The challenge was with the Enter key and the validation of the guess through colors.
-            <br>
-            <br>
+          </p>  <p>
             My partner worked mainly on the model, where the game's data and logic are managed. The model handles the
             game state, including the target word, guesses, and the validation of those guesses. When the Enter key was
             pressed, a word that was not in the provided dictionary was still considered valid, which should not have
             been the case. After a few days of work, we resolved this issue. However, a new problem arose: testing with
             a known answer showed that the colors were not updating correctly.
-            <br>
-            <br>
+        </p>
+        <p>
             For instance, if our target word was <strong>"PLACE"</strong> and we started with <strong>"PLAIN"</strong>,
             the grid updated correctly the first time, where <i>"P", "L", and "A"</i> were green, and <i>"I" and "N"</i>
             were red. On the second attempt, if we guessed <strong>"PLACK"</strong>, <i>"P" and "L"</i> turned yellow,
@@ -130,48 +159,61 @@
         <p> The next feature I wanted to add was a text box displaying information about a win or indicating that you
             should try again after using all your guesses, as well as displaying the target word. I successfully
             incorporated this into the game logic, and it turned out quite well.</p>
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-        </div>
-        <br>
-        <br>
-        <h2>RESULTS</h2>
-        <br>
-        <br>
-        <p> This is how the Wordle game turned out.
-            <img src="{{ url_for('static', filename='images/ss4.png') }}" alt="ss4" class="image-sixth">
-            <img src="{{ url_for('static', filename='images/ss5.png') }}" alt="ss5" class="image-sixth">
-            <img src="{{ url_for('static', filename='images/ss6.png') }}" alt="ss6" class="image-sixth">
-            <img src="{{ url_for('static', filename='images/ss7.png') }}" alt="ss7" class="image-sixth">
-            <img src="{{ url_for('static', filename='images/ss8.png') }}" alt="ss8" class="image-sixth">
-            <img src="{{ url_for('static', filename='images/ss9.png') }}" alt="ss9" class="image-sixth">
-        </p>
-        <br>
+       </section>
+
+       <section id="results" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">RESULTS</h2>
+        <p> This is how the Wordle game turned out.</p>
+<div class="flex flex-wrap justify-center items-center my-6 gap-4">
+        <img src="{{ url_for('static', filename='images/ss4.png') }}" alt="ss4" class="max-w-full md:max-w-xs ">
+        <img src="{{ url_for('static', filename='images/ss5.png') }}" alt="ss5" class="max-w-full md:max-w-xs ">
+</div>
+<div class="flex flex-wrap justify-center items-center my-6 gap-4">
+        <img src="{{ url_for('static', filename='images/ss6.png') }}" alt="ss6" class="max-w-full md:max-w-xs ">
+        <img src="{{ url_for('static', filename='images/ss7.png') }}" alt="ss7" class="max-w-full md:max-w-xs ">
+</div>
+<div class="flex flex-wrap justify-center items-center my-6 gap-4">
+        <img src="{{ url_for('static', filename='images/ss8.png') }}" alt="ss8" class="max-w-full md:max-w-xs ">
+        <img src="{{ url_for('static', filename='images/ss9.png') }}" alt="ss9" class="max-w-full md:max-w-xs ">
+</div>
+      
         <p> With this, we can see that the colors are updated correctly both on the keyboard and the grid, with messages
             indicating a win, a loss, or an invalid word, and also displaying the target word. Here we can see that the
             target word is <i><strong>EXTRA</strong></i>, which does not contain the letter <i>"E"</i>. However, from
             the feedback given by the colors, it seemed there should be an <i>"E"</i>, which was not the case. Despite
             this, the colors updated correctly for 70% of the words.
         </p>
-        <br>
-        <br>
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-        </div>
-        <br>
-        <br>
-        <h2>CONCLUSION</h2>
-        <br>
-        <br>
+    </section>
+
+        <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">CONCLUSION</h2>
         <p> For this project, I have learned some new programming techniques (graphics and JComponents in Java), how to
             identify the necessary classes before coding, how to plan a software project, and how to work effectively in
             a team. These new skills will surely boost my morale to create more projects using this format and what I
             have learned.</p>
-        <br>
-        <br>
-    </div>
+    
+        </section>
 
-    <script src="" async defer></script>
+
+
+<section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</article>
+<!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+
 </body>
 
 

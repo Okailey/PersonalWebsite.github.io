@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+<!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!-- About Me Section -->
+  <main class="pt-28 container mx-auto px-4 max-w-4xl space-y-8">
+    <section>
+      <h1 class="text-4xl font-bold mb-6 text-center">About Me</h1>
+
+      <p class="mb-4">
+        Hi! I'm <strong>Danielle Quaye</strong>, a recent graduate from Mount Holyoke College with a degree in Computer Science and have a
+        passion for creating/contributing to innovative solutions that help others. My interests lie in <strong> frontend development,
+          product management, artificial intelligence, and robotics</strong>. Originally from Ghana, I bring a unique
+        perspective and dedication to my work, aiming to build technology that can make a real impact in society.
+      </p>
+
+      <p class="mb-4">
+        I have hands-on experience <strong>developing web applications</strong>, software design, and I'm always eager
+        to learn new tools and techniques to expand my skills. I explored <strong>motion planning with
+          Duckiebots</strong>, which deepened my interest in robotics and autonomous systems. This experience taught me
+        to solve complex challenges creatively, blending technical knowledge with problem-solving skills. Recently, I have started learning more about cloud infrastructure and deployment.
+      </p>
+
+      <p class="mb-4">
+        There have been many exciting projects I have worked on, and you can view them <a href="/projects.html"
+          class="text-blue-600 font-bold">here</a>. Through these projects I gained experience
+        with <strong>Python, Flask, HTML/CSS, JavaScript, Java, Swift, TypeScript, Cloud Infrastructure, React.js, Node.js and databases</strong>.
+      </p>
+
+      <p class="mb-4">
+        I love this path because I find joy in seeing a positive impact from my work. Whether it's contributing to solving major challenges in the lives of individuals or communities, I am driven by the potential of technology to create meaningful change.
+        I really believe that empathy is just as important as my technical skills. My emotional intelligence allows me to adapt to diverse teams, understand user needs, and create technology that truly makes a difference.
+
+      </p>
+
+      <p class="mb-4">
+        Outside of coding, I enjoy playing <strong>tennis</strong> and volunteering with Dennis Tennis Serving Love
+        Nonprofit, mentoring children interested in tennis.
+      </p>
+
+      <p class="mb-4">
+        If you’d like to learn more, you can view my resume <a
+          href="{{ url_for('static', filename='DNOQ.pdf') }}" target="_blank"
+          class="text-blue-600 font-bold">here</a> and read my design manifesto <a
+          href="/designManifesto.html" class="text-blue-600 font-bold">here</a>.
+      </p>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center space-x-4 mt-8">
+    </div>
+
+  </main>
+   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+
+</body>
+
+</html>

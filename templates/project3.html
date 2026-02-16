@@ -1,437 +1,464 @@
-<<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-    <html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
-        <title>Designing For Community</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <div class="menuBar">
-            <a href="/">Home</a>
-            <a href="/designManifesto"> Design Manifesto</a>
-            <a href="/projects">Projects</a>
-            <a href="/#contact">Contact me</a>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
+
+        <nav class="flex flex-col space-y-4">
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#interviewing" class="hover:text-blue-600">Interviews & Questions</a>
+        <a href="#identification" class="hover:text-blue-600">Identification of Problem</a>
+        <a href="#identification1" class="hover:text-blue-600">Precise Description of Problem</a>
+        <a href="#persona" class="hover:text-blue-600">Persona</a>
+        <a href="#solution" class="hover:text-blue-600">Solutions</a>
+        <a href="#sketches" class="hover:text-blue-600">Sketches</a>
+        <a href="#implementation" class="hover:text-blue-600">Implementation</a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+   <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+   <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+        <h1 class="text-3xl font-bold text-center"> DESIGNING FOR COMMUNITY</h1>
+        <h2 class="text-2xl font-bold text-center">INTRODUCTION </h2>
+
+        <p>
+            <strong> I developed several key skills, which include:</strong>
+             <ul class="list-disc list-inside space-y-2">
+            <li><strong>Brainstorming: </strong> Generated multiple creative solutions to solve a particular
+            problem.</li>
+            <li><strong>Problem Identification and Communication: </strong> Properly identified key
+            problems and effectively communicated my findings, insights, and design decisions through written and
+            visual means. </li>
+            </ul>
+            <p> 
+            In this project, my goal is to design technology to help with community-building at Mount
+            Holyoke. I
+            will speak to some Mount Holyoke students to get a sense of their experiences with making and
+            maintaining friends on campus and design a tool to tackle one aspect of the problems they have
+            encountered during their time on campus so far. The tool I will be designing will be a mobile
+            app
+            that
+            will aid in helping that specific aspect.
+           </p>
+        <p>To interact with the prototype, click <a
+                href="https://www.figma.com/file/520HLGcjuqWGyjj8HHsKLP/Danielle's-project-3?type=design&mode=design&t=w24aVjful5iVU4Zr-1"
+                class="designManifestoLink text-blue-600 font-bold">here</a>.
+
+        </p>
+    </section>
+
+    <section id="interviewing" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> INTERVIEWING MOUNT HOLYOKE STUDENTS</h2>
+        <p>
+            In order to get input from 3-5 MHC students, I decided to create a list of questions I aim to
+            ask to
+            guide me and slowly ease into the answers they provide and follow in that direction. I
+            incorporated
+            the
+            semi-structured interview technique. After about 15 minutes, I had my questions ready.
+        </p>
+
+        <h2 class="text-2xl font-bold text-center">QUESTIONS I ASKED</h2>
+      
+        <ul class="list-disc list-inside space-y-2">
+            <li> How do you typically initiate or maintain friendships on campus?
+           </li>
+            <li>Are there any specific barriers you've encountered when trying to connect with other students?
+            </li>
+            <li>Have you noticed any patterns or trends in terms of how students socialize or form friendships
+            at Mount Holyoke?
+            </li>
+            <li>How do you think technology could be used to improve the social experience for students at
+            Mount Holyoke?
+            </li>
+            <li>Can you tell me about your experiences with making friends or building community on campus?
+            </li>
+            </ul>
+
+       <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic49.png') }}" alt="4 laptops on a brown table" class="w-full md:w-2/3 lg:w-2/4">
+</div>
+            <p> 
+            This was me interviewing a few other friends after a group meeting around 7:30pm.
+          
+            I asked a couple other people as well over text. Here are some snippets of the text messages
+            with
+            some
+            replies </p>
+
+            <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic50.png') }}" alt="snippets of the text messages with some replies" class="max-w-full md:max-w-xs ">
+            <img src="{{ url_for('static', filename='images/pic51.png') }}" alt="snippets of the text messages with some replies" class="max-w-full md:max-w-xs ">
+            <img src="{{ url_for('static', filename='images/pic52.png') }}" alt="snippets of the text messages with some replies" class="max-w-full md:max-w-xs ">
         </div>
+       
+        <p>
+            I did not ask all the questions I had there. I asked different people a series of the same
+            questions
+            but
 
-        <div>
-            <br>
-            <h2> DESIGNING FOR COMMUNITY</h2>
-            <br>
-            <h1>INTRODUCTION </h1>
-            <br>
-            <br>
-            <p>
-                In this project, my goal is to design technology to help with community-building at Mount Holyoke. I
-                will speak to some Mount Holyoke students to get a sense of their experiences with making and
-                maintaining friends on campus and design a tool to tackle one aspect of the problems they have
-                encountered during their time on campus so far. The tool I will be designing will be a mobile app that
-                will aid in helping that specific aspect.
-                <br>
-            <p>To interact with the prototype, click <a
-                    href="https://www.figma.com/file/520HLGcjuqWGyjj8HHsKLP/Danielle's-project-3?type=design&mode=design&t=w24aVjful5iVU4Zr-1">here</a>.
+            in a different order. I took some questions out because it made my focus too broad.
+        </p>
+    </section>
+
+    <section id="identification" class="space-y-4 mt-12 scroll-mt-24">
+
+        <h2 class="text-2xl font-bold text-center">IDENTIFICATION OF THE PROBLEM</h2>
+        <p>
+
+            I got feedback from all the MHC students I spoke to concerning the problems they faced with how
+            they
+            perceived, initiated, and maintained friendships. I decided to get the perspectives of two
+            racially
+            different groups.
+      
+            This is what I gathered:
+         <ul class="list-disc list-inside space-y-2">
+            <li> Many MHC students are in cliques, sports teams, or clubs. They are close knitted so in order
+            to
+            be a
+            part of that clique you’d have to join them(sport or club).
+            </li>
+            <li> There are different people with different stories and backgrounds and that plays a huge role
+            in
+            the
+            situation.
+            </li>
+            <li> Taking a class with someone does not mean you will be friends after that class.
+            </li>
+            <li> Most people maintain their friendships by texting and meeting up for lunch/dinner in blanch
+            to
+            catch
+            up.
+            </li>
+            <li> Orientation is where people had their first initiation of friendships, but most did not last
+            due
+            to
+            realization that they are no compatible(turkey drop).
+            </li>
+            <li>  If you do not have a friend group (clique) after a week or two in your first year, you will
+            usually
+            be alone most times.
+            </li>
+            </ul>
+        </section>
+ 
+
+ <section id="identification1" class="space-y-4 mt-12 scroll-mt-24">
+
+        <h2 class="text-2xl font-bold text-center">PRECISE DESCRIPTION OF THE PROBLEM</h2>
+        <p>
+            There are many people who come from different backgrounds and so they relate to others
+            differently.
+            Once
+            you come into college, you usually try to initialize friendships from orientation, classes, and
+            dorms
+            but sometimes, soon after you realize that you have no common interests except for that one
+            thing
+            which
+            was a class you had together or that dorm you lived in. This makes it hard to relate really well
+            with
+            others, so you tend to find people who share similar interests and backgrounds (maybe originate
+            from
+            the
+            same culture/country) to hang out with and you eventually stay with that group because you are
+            comfortable.
+
+        </p>
+        </section>
+
+        <section id="persona" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">CREATION OF PERSONA</h2>
+        <p>
+
+
+            My name is Jayne Aang. You can call me J. I attend Mount Holyoke College and I am from Ethiopia.
+            I
+            have
+            quickly come to realize that making friends here is very different from making friends back
+            home. I
+            made
+            a couple of friends during orientation by interacting with them every day because we were in a
+            common
+            space and after orientation, there was no contact. It was weird. I was always in my room until I
+            found
+            other people like me with common backgrounds. In fact, I did not find them, they found me. They
+            were
+            seniors so it made more sense. It was easier to initialize conversations by just talking about
+            things we
+            had in common, and it was easier to maintain those friendships because of that. I have friends I
+            talk to
+            in class, but it is just not the same. Once I do not have class with them anymore, keeping in
+            touch
+            is
+            difficult because if it was not for the class, we would not have even met. Maybe it’s because
+            there
+            is a
+            huge barrier due to different cultural experiences.
             </p>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
+            
+        <p>
+        <span class="font-semibold">GOALS</span> </p>
+     
+            <ul class="list-disc list-inside space-y-2">
+                <li> 
+        I want to be able to find and connect with people who have very similar backgrounds as me and
+            we
+            should share common interests because talking would flow naturally. </li>
+            </ul>
+    
+         <p>
+        <span class="font-semibold">FRUSTRATIONS</span> </p>
+    
+        <ul class="list-disc list-inside space-y-2">
+                <li> 
+         Even though Mount Holyoke has a small population of students, it is still hard to find friends
+            because
+            everyone likes to keep to themselves when not with their cliques.
+                </li> 
+            <li>  Social media does not help if I do not know where to look to find people like me.
+            </li> 
+        </ul>
+    </section>
+
+    <section id="solution" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> 5 DIFFERENT SOLUTIONS</h2>
+
+        <p>
+            Overall, the interface I am going for is the mobile interface because as college students, our
+            phones
+            are with us 24/7. The aspect of the problem of finding people with similar interests and
+            background
+            begins by asking “how to find them when you arrive on campus”. Even though there is orientation,
+            there
+            is little to no activity after orientation to help student find their spaces where they can
+            interact
+            freely to make them feel at home because they don’t have those similarities and experiences. </p>
+          
+            <ul class="list-disc list-inside space-y-2">
+             <li><strong> Background-matching</strong>: this app would be a mobile app that aims to connect
+            people(mostly first
+            years)
+            with a common background and experience. There will be filters to decide on how to you want to
+            look
+            for
+            other profiles(by age, place of birth, etc.)</li>
+           
+            <li> <strong> Similar interest hubs</strong>: this app will focus on allowing MHC students who do not have
+            cliques
+            or
+            friends
+            yet and long to have friends with similar interests, experiences and background text and plan
+            activities
+            together. </li>
+            
+            <li><strong> FriendFinding app(Bump)</strong>: this app will be like a dating app but for friends. You can
+            create
+            your
+            profile and fill the form with your details and swipe to find a match. You can find more about
+            people on
+            their profiles so far as they are on the app. The more you swipe and bump, the algorithm will
+            recognize
+            and give you more people based on those you bumped with. </li>
+
+            <li><strong>StudyBuddy app </strong>: this app will help bring people together who are doing the same
+            major. This
+            is a
+            great idea because if you are doing the same major, you are likely to see the person most days
+            when
+            you
+            have class till you graduate and with that you can express similar interests and take it from
+            there.
+            You
+            have a study buddy and someone you connect with due to shared experiences. </li>
+
+            <li><strong> DormBuddies </strong> this app will help bring people who are in the same building with
+            similar
+            interests
+            together. This helps because once you have someone in your dorm who is like you in the sense
+            that
+            you
+            are compatible, it makes everything more fun. </li>
+            </ul>
+    </section>
+    
+
+    <section id="chosenskolution" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> WHAT I HAVE CHOSEN TO CREATE</h2>
+
+        <p>
+            After brainstorming on my solutions, I decided to create the <strong> Friend Finding App(Bump)</strong>
+            where you
+            can
+            find
+            people, like a dating app and see if you are compatible enough. As time goes on, you can find
+            more
+            people and you will be able to expand your friend group. With this, you can swipe and see
+            pictures
+            or
+            ultimately look at profiles and what other people have on theirs which attracts you to bump with
+            them.
+        </p>
+        <p>
+            An app that I also really liked was study buddy app. With this app, you can start out as
+            acquaintances
+            from class because you are majoring in the same subject and as time goes on, it can build. You
+            can
+            find
+            people with similar background/experience as you and it will make the friendship stronger, but I
+            did
+            not
+            implement this.
+        </p>
+    </section>
+
+    <section id="sketches" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> SKETCHES I MADE</h2>
+        <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic53.png') }}" alt="screen background with the sketch of the app. It has a smily face at the top center and the bump logo" class="w-full md:w-2/3 lg:w-2/4">
             </div>
-            <br>
-            <br>
-            <h1> INTERVIEWING MOUNT HOLYOKE STUDENTS</h1>
-            <br>
-            <p>
-                In order to get input from 3-5 MHC students, I decided to create a list of questions I aim to ask to
-                guide me and slowly ease into the answers they provide and follow in that direction. I incorporated the
-                semi-structured interview technique. After about 15 minutes, I had my questions ready.
+            <p> 
+            I really liked these two pages but decided against the about page because since it’s for college
+            students, word can easily go around concerning what the app is about. As for the second page, I
+            decided
+            to go with it because I tried to create something fun that did not have to do with looking at
+            words
+            for
+            so long. I decided against the filter feature it would take a long time to implement. I used
+            icons
+            for
+            the menu instead of a hamburger menu just because the app did not have a lot of pages which
+            would
+            require a longer menu.
             </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
+            <div class="flex justify-center items-center my-6">
+
+            <img src="{{ url_for('static', filename='images/pic54.png') }}" alt="the second sketch of the app showing the main page with a blue background as well as the chat interface" class="w-full md:w-2/3 lg:w-2/4">
             </div>
-            <br>
-            <br>
-            <h1>QUESTIONS I ASKED</h1>
-            <br>
-            <p>
-                • How do you typically initiate or maintain friendships on campus?
-                <br>
-                • Are there any specific barriers you've encountered when trying to connect with other students?
-                <br>
-                • Have you noticed any patterns or trends in terms of how students socialize or form friendships at
-                Mount Holyoke?
-                <br>
-                • How do you think technology could be used to improve the social experience for students at Mount
-                Holyoke?
-                <br>
-                • Can you tell me about your experiences with making friends or building community on campus?
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic49.png') }}" alt="pic49.png" class="image-first">
 
-                <br>
-                This was me interviewing a few other friends after a group meeting around 7:30pm.
-                <br>
-                <br>
-                I asked a couple other people as well over text. Here are some snippets of the text messages with some
-                replies
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic50.png') }}" alt="pic50.png" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic51.png') }}" alt="pic51.png" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic52.png') }}" alt="pic52.png" class="image-first">
+            <p> 
+            I reiterated the idea about the photos here once more which would involve a horizontal slide to
+            see
+            the
+            people that are on the app in order to “bump”. I had a chat page as well for texting those you
+            have
+            “bumped”. I did not use the logo anymore just the word at the left corner. The use of icons for
+            the
+            menu
+            made it very simple.
             </p>
-            <br>
-            <br>
-            <p>
-                I did not ask all the questions I had there. I asked different people a series of the same questions but
+    </section>
 
-                in a different order. I took some questions out because it made my focus too broad.
-            </p>
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
+    <section id="finalsketches" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> FINAL SKETCH OF SOME PAGES</h2>
+  <div class="flex justify-center items-center my-6">
+    <img src="{{ url_for('static', filename='images/pic55.png') }}" alt="the home page with a horizontal scroll feature with a purple background" class="w-full md:max-w-xs">
+            <img src="{{ url_for('static', filename='images/pic56.png') }}" alt="the chat page of the app with a purple background" class="w-full md:w-2/3 lg:w-2/4">
             </div>
-            <br>
-            <br>
-            <h1>IDENTIFICATION OF THE PROBLEM</h1>
-            <br>
-            <br>
-            <p>
+    </section>
 
-                I got feedback from all the MHC students I spoke to concerning the problems they faced with how they
-                perceived, initiated, and maintained friendships. I decided to get the perspectives of two racially
-                different groups.
-                <br>
-                This is what I gathered:
-                <br>
-                1. Many MHC students are in cliques, sports teams, or clubs. They are close knitted so in order to be a
-                part of that clique you’d have to join them(sport or club).
-                <br>
-                2. There are different people with different stories and backgrounds and that plays a huge role in the
-                situation.
-                <br>
-                3. Taking a class with someone does not mean you will be friends after that class.
-                <br>
-                4. Most people maintain their friendships by texting and meeting up for lunch/dinner in blanch to catch
-                up.
-                <br>
-                5. Orientation is where people had their first initiation of friendships, but most did not last due to
-                realization that they are no compatible(turkey drop).
-                <br>
-                6. If you do not have a friend group (clique) after a week or two in your first year, you will usually
-                be alone most times.
-                <br>
-                <br>
+    <section id="implementation" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> IMPLEMENTATION IN FIGMA</h2>
+  <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic57.png') }}" alt="the final implementation of the app in Figma showing a purple background and the main interface" class="w-full md:w-2/3 lg:w-2/4">
+           </div>
 
-                <br>
-                <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> PRECISE DESCRIPTION OF THE PROBLEM</h1>
-            <br>
-            <br>
-            <p>
-                There are many people who come from different backgrounds and so they relate to others differently. Once
-                you come into college, you usually try to initialize friendships from orientation, classes, and dorms
-                but sometimes, soon after you realize that you have no common interests except for that one thing which
-                was a class you had together or that dorm you lived in. This makes it hard to relate really well with
-                others, so you tend to find people who share similar interests and backgrounds (maybe originate from the
-                same culture/country) to hang out with and you eventually stay with that group because you are
-                comfortable.
+           <p>
+            I ventured out to try new colors which I think looks great! Not too formal, not too playful!
+            Overall, I
+            liked how this is a step to help combat the problem of making friends here in MHC. I created my
+            own
+            carousel
+            as I searched for some interactive ones but did not find any good ones. The use of pictures
+            makes
+            the
+            prototype not too formal and standard. I like that I used the idea of the dating app. This is
+            far
+            from
+            being
+            the best prototype, but it is an effort for my persona to try out!
+        </p>
+    </section>
 
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>CREATION OF PERSONA</h1>
-            <br>
-            <p>
-                Persona
-                <br>
-                My name is Jayne Aang. You can call me J. I attend Mount Holyoke College and I am from Ethiopia. I have
-                quickly come to realize that making friends here is very different from making friends back home. I made
-                a couple of friends during orientation by interacting with them every day because we were in a common
-                space and after orientation, there was no contact. It was weird. I was always in my room until I found
-                other people like me with common backgrounds. In fact, I did not find them, they found me. They were
-                seniors so it made more sense. It was easier to initialize conversations by just talking about things we
-                had in common, and it was easier to maintain those friendships because of that. I have friends I talk to
-                in class, but it is just not the same. Once I do not have class with them anymore, keeping in touch is
-                difficult because if it was not for the class, we would not have even met. Maybe it’s because there is a
-                huge barrier due to different cultural experiences.
-                <br>
-                <br>
-            <p>
-            <h1> GOAL</h1>
-            <br>
-            <p>
-                • I want to be able to find and connect with people who have very similar backgrounds as me and we
-                should share common interests because talking would flow naturally.
-            </p>
-            </p>
-            <br>
-            <br>
-            <h1>FRUSTRATIONS</h1>
-            <br>
-            <p>
-                • Even though Mount Holyoke has a small population of students, it is still hard to find friends because
-                everyone likes to keep to themselves when not with their cliques.
-                <br>
-                • Social media does not help if I do not know where to look to find people like me.
-                <br>
-                <br>
-            </p>
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> 5 DIFFERENT SOLUTIONS</h1>
-            <br>
-            <p>
-                Overall, the interface I am going for is the mobile interface because as college students, our phones
-                are with us 24/7. The aspect of the problem of finding people with similar interests and background
-                begins by asking “how to find them when you arrive on campus”. Even though there is orientation, there
-                is little to no activity after orientation to help student find their spaces where they can interact
-                freely to make them feel at home because they don’t have those similarities and experiences.
-                <br>
-                <br>
-
-                • Background-matching: this app would be a mobile app that aims to connect people(mostly first years)
-                with a common background and experience. There will be filters to decide on how to you want to look for
-                other profiles(by age, place of birth, etc.)
-                <br>
-                <br>
-                • Similar interest hubs: this app will focus on allowing MHC students who do not have cliques or friends
-                yet and long to have friends with similar interests, experiences and background text and plan activities
-                together.
-                <br>
-                <br>
-                • FriendFinding app(Bump): this app will be like a dating app but for friends. You can create your
-                profile and fill the form with your details and swipe to find a match. You can find more about people on
-                their profiles so far as they are on the app. The more you swipe and bump, the algorithm will recognize
-                and give you more people based on those you bumped with.
-
-                <br>
-                <br>
-                • StudyBuddy app : this app will help bring people together who are doing the same major. This is a
-                great idea because if you are doing the same major, you are likely to see the person most days when you
-                have class till you graduate and with that you can express similar interests and take it from there. You
-                have a study buddy and someone you connect with due to shared experiences.
-
-                <br>
-                <br>
-
-                • DormBuddies : this app will help bring people who are in the same building with similar interests
-                together. This helps because once you have someone in your dorm who is like you in the sense that you
-                are compatible, it makes everything more fun.
-
-                <br>
-                <br>
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> WHAT I HAVE CHOSEN TO CREATE</h1>
-            <br>
-            <br>
-            <p>
-                After brainstorming on my solutions, I decided to create the Friend Finding App(Bump) where you can find
-                people, like a dating app and see if you are compatible enough. As time goes on, you can find more
-                people and you will be able to expand your friend group. With this, you can swipe and see pictures or
-                ultimately look at profiles and what other people have on theirs which attracts you to bump with them.
-                <br>
-                <br>
-                An app that I also really liked was study buddy app. With this app, you can start out as acquaintances
-                from class because you are majoring in the same subject and as time goes on, it can build. You can find
-                people with similar background/experience as you and it will make the friendship stronger, but I did not
-                implement this.
-            </p>
-
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> SKETCHES I MADE</h1>
-            <br>
-            <br>
-            <p>
-                <img src="{{ url_for('static', filename='images/pic53.png') }}" alt="pic53.png" class="image-first">
-                <br>
-                I really liked these two pages but decided against the about page because since it’s for college
-                students, word can easily go around concerning what the app is about. As for the second page, I decided
-                to go with it because I tried to create something fun that did not have to do with looking at words for
-                so long. I decided against the filter feature it would take a long time to implement. I used icons for
-                the menu instead of a hamburger menu just because the app did not have a lot of pages which would
-                require a longer menu.
-                <br>
-                <br>
-
-                <img src="{{ url_for('static', filename='images/pic54.png') }}" alt="pic54.png" class="image-first">
-                <br>
-                I reiterated the idea about the photos here once more which would involve a horizontal slide to see the
-                people that are on the app in order to “bump”. I had a chat page as well for texting those you have
-                “bumped”. I did not use the logo anymore just the word at the left corner. The use of icons for the menu
-                made it very simple.
-                <br>
-                <br>
-                <br>
-                <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>FINAL SKETCH OF SOME PAGES</h1>
-            <br>
-            <br>
-            <p>
-                <img src="{{ url_for('static', filename='images/pic55.png') }}" alt="pic55.png" class="image-fourth">
-                <img src="{{ url_for('static', filename='images/pic56.png') }}" alt="pic56.png" class="image-fourth">
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> IMPLEMENTATION IN FIGMA</h1>
-            <br>
-            <p>
-                <img src="{{ url_for('static', filename='images/pic57.png') }}" alt="pic57.png" class="image-first">
-                <br>
-                <br>
-                I ventured out to try new colors which I think looks great! Not too formal, not too playful! Overall, I
-                liked how this is a step to help combat the problem of making friends here in MHC. I created my own
-                carousel
-                as I searched for some interactive ones but did not find any good ones. The use of pictures makes the
-                prototype not too formal and standard. I like that I used the idea of the dating app. This is far from
-                being
-                the best prototype, but it is an effort for my persona to try out!
-                <br>
-                <br>
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> CONCLUSION</h1>
-            <br>
-
-            <p>
-                It was a bit hard to come up multiple ideas without having to think about the same thing, but it was
-                worth
-                it in the end. I found it really hard to choose between two of my designs because they were the best out
-                of
-                all the solutions I came up with, but I will definitely implement the other on my own free time. The
-                ideas I
-                came up with all have unique features to them even though they aimed to solve the same problem.
-                I really enjoyed the interview I had with people this time round because I was getting the same feedback
-                from everyone involving the cliques here at MHC and how hard it is to make friends or find people with
-                genuine interest as you. The color palettes were a bit difficult to choose from, but I chose one that
-                looked
-                good(shades of purple).
-                This app solves an aspect of the problems that students have concerning making and maintaining friends.
-            </p>
-            <br>
-            <br>
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
+        <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> CONCLUSION</h2>
+        <p>
+            It was a bit hard to come up multiple ideas without having to think about the same thing, but it
+            was
+            worth
+            it in the end. I found it really hard to choose between two of my designs because they were the
+            best
+            out
+            of
+            all the solutions I came up with, but I will definitely implement the other on my own free time.
+            The
+            ideas I
+            came up with all have unique features to them even though they aimed to solve the same problem.
+            I really enjoyed the interview I had with people this time round because I was getting the same
+            feedback
+            from everyone involving the cliques here at MHC and how hard it is to make friends or find
+            people
+            with
+            genuine interest as you. The color palettes were a bit difficult to choose from, but I chose one
+            that
+            looked
+            good(shades of purple).
+            This app solves an aspect of the problems that students have concerning making and maintaining
+            friends.
+        </p>
+    </section>
 
 
 
+ <section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
 
-        </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</article>
+<!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+</body>
 
-
-
-        <br>
-        <br>
-        <div class="theFooter">
-            <footer>
-                <p1> Danielle Quaye</p1>
-            </footer>
-        </div>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var footer = document.querySelector('.theFooter');
-
-                window.addEventListener('scroll', function () {
-                    // Calculate how far the user has scrolled
-                    var scrollPosition = window.innerHeight + window.pageYOffset;
-                    var bodyHeight = document.body.offsetHeight;
-
-                    // If the user has scrolled to the bottom of the page, show the footer
-                    if (scrollPosition >= bodyHeight) {
-                        footer.classList.add('footer-visible');
-                    } else {
-                        footer.classList.remove('footer-visible');
-                    }
-                });
-            });
-        </script>
-        <br>
-        <br>
-    </body>
-
-    </html>
+</html>

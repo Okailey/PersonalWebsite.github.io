@@ -1,91 +1,180 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href=""> -->
-    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danielle Quaye - Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="menuBar">
-        <a href="/">Home</a>
+<body class="bg-white text-gray-900 font-sans">
 
-        <a href="/designManifesto"> Design Manifesto</a>
-        <a href="/#contact">Contact me</a>
-
-        <!-- <a href="/projects">Projects</a> -->
-        <!-- <a href="/projectsList">Project List</a> -->
-        <!-- Add more menu items as needed -->
+<!-- Header -->
+<header class="bg-white shadow-md fixed w-full z-10 top-0">
+  <nav class="container mx-auto flex justify-between items-center p-6">
+    <div class="text-xl font-bold text-gray-900">Danielle Quaye</div>
+    <div class="flex space-x-6">
+      <a href="homepage.html" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
     </div>
+  </nav>
+</header>
 
-    <div>
-        <br>
+<main class="pt-32 pb-20">
 
-        <h3 class="title">Human-Computer Interaction Projects</h3>
-        <ul class="projects-list">
-            <li>
-            <li class="center">
-                <a href="/project1.html">
-                    <img src="{{ url_for('static', filename='images/P1.png') }}" alt="Project 1">
-                    <span>Designing For Other People</span>
-                </a>
-            </li>
+<!-- Page Title -->
+<section class="text-center mb-12">
+  <h1 class="text-3xl font-extrabold mb-2">Human-Computer Interaction Projects</h1>
+  <p class="text-lg text-gray-700">A collection of projects I have worked on or contributed to</p>
 
-            <li class="center">
-                <a href="/project2.html">
-                    <img src="{{ url_for('static', filename='images/P2.png') }}" alt="Project 2">
-                    <span>(Re)Designing For Other People</span>
-                </a>
-            </li>
 
-            <li>
-                <a href="/project3.html">
-                    <img src="{{ url_for('static', filename='images/P3.png') }}" alt="Project 3">
-                    <span>Designing For A Community</span>
-                </a>
-            </li>
+<!-- HCI Projects Grid -->
+<div class="max-w-5xl mx-auto px-4 grid gap-8 sm:grid-cols-2">
 
-            <li class="center">
-                <a href="/project4.html">
-                    <img src="{{ url_for('static', filename='images/P4.png') }}" alt="Project 4">
-                    <span>Seeking & Integrating Feedback</span>
-                </a>
-            </li>
-
-            <li class="center">
-                <a href="/project5.html">
-                    <img src="{{ url_for('static', filename='images/P5.png') }}" alt="Project 5">
-                    <span>Inspired By A True Story</span>
-                </a>
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+    <img src="{{ url_for('static', filename='images/ig1.png') }}" alt="Designing For Other People" class="w-full h-48 object-cover" />
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-2">Designing For Other People</h2>
+      <p class="text-gray-700 mb-4">
+        Developing ideas to solve a specific solution for a target user. Focused on brainstorming and user-centered design.
+      </p>
+      <a href="project1.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">
+        View Project
+      </a>
     </div>
+  </div>
 
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+    <img src="{{ url_for('static', filename='images/ig2.png') }}" alt="Re(Designing) For People" class="w-full h-48 object-cover" />
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-2">Re(Designing) For People</h2>
+      <p class="text-gray-700 mb-4">
+        Redesigning an existing website for a specific group using Figma and user research.
+      </p>
+      <a href="project2.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">
+        View Project
+      </a>
+    </div>
+  </div>
 
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+    <img src="{{ url_for('static', filename='images/ig3.png') }}" alt="Designing For Community" class="w-full h-48 object-cover" />
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-2">Designing For Community</h2>
+      <p class="text-gray-700 mb-4">
+        Designing technology to help with community-building at Mount Holyoke using Figma.
+      </p>
+      <a href="project3.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">
+        View Project
+      </a>
+    </div>
+  </div>
 
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+    <img src="{{ url_for('static', filename='images/ig4.png') }}" alt="Seeking & Integrating Feedback" class="w-full h-48 object-cover" />
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-2">Seeking & Integrating Feedback</h2>
+      <p class="text-gray-700 mb-4">
+        Evaluated a previous Figma prototype using a cognitive walkthrough and user surveys to gather actionable insights.
+      </p>
+      <a href="project4.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">
+        View Project
+      </a>
+    </div>
+  </div>
 
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+    <img src="{{ url_for('static', filename='images/ig5.png') }}" alt="Inspired By A True Story/Paper" class="w-full h-48 object-cover" />
+    <div class="p-6">
+      <h2 class="text-xl font-bold mb-2">Inspired By A True Story/Paper</h2>
+      <p class="text-gray-700 mb-4">
+        Explored ACM CHI paper <em>12 Ways to Empower: Designing for Children’s Digital Autonomy</em> and created a Figma prototype addressing its main challenge.
+      </p>
+      <a href="project5.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">
+        View Project
+      </a>
+    </div>
+  </div>
 
+</section>
 
+<!-- Software Projects -->
+<section class="mt-20 text-center">
+  <h1 class="text-3xl font-bold mb-8">Software Design & Development Projects</h1>
 
+  <div class="max-w-5xl mx-auto px-4 grid gap-8 sm:grid-cols-2">
 
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <img src="{{ url_for('static', filename='images/wordless.png') }}" alt="Wordle" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">Wordle</h2>
+                <p class="text-gray-700 mb-4">Created in Java using Eclipse. Engaging word-guessing game inspired by NYT Wordle.</p>
+                <a href="projectwordle.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">View Project</a>
+            </div>
+        </div>
 
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <img src="{{ url_for('static', filename='images/recime.png') }}" alt="ReciMe" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">ReciMe</h2>
+                <p class="text-gray-700 mb-4">A React project using Edamam API & Firebase to deliver secure, community-driven recipes.</p>
+                <a href="reciMe.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">View Project</a>
+                                 <a href="https://github.com/Okailey/Recipe-Project/tree/main" class="inline-block bg-teal-200 hover:bg-blue-400 text-black px-4 py-2 rounded font-medium transition">Github/Demo</a>
+            </div>
+        </div>
 
-    <script src="" async defer></script>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <img src="{{ url_for('static', filename='images/spotivibe.png') }}" alt="SpotiVibe project" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">SpotiVibe</h2>
+                <p class="text-gray-700 mb-4">React project transforming passive listening into an interactive, community-driven experience.</p>
+                <a href="spotivibe.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">View Project</a>
+                  <a href="https://github.com/Okailey/spotify" class="inline-block bg-teal-200 hover:bg-blue-400 text-black px-4 py-2 rounded font-medium transition">Github/Demo</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <img src="{{ url_for('static', filename='images/LingoMates.png') }}" alt="LingoMates project" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">LingoMates</h2>
+                <p class="text-gray-700 mb-4">Swift project focused on language learning through cultural immersion, helping users communicate authentically while preserving language and cultural identity.</p>
+                <a href="lingomates.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">View Project</a>
+                  <a href="https://github.com/Okailey/Lingomates" class="inline-block bg-teal-200 hover:bg-blue-400 text-black px-4 py-2 rounded font-medium transition">Github/Demo</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform">
+            <img src="{{ url_for('static', filename='images/clony.png') }}" alt="Clony project" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold mb-2">Clony</h2>
+                <p class="text-gray-700 mb-4">A React project that replicates the ChatGPT interface and functionality.</p>
+                <a href="clony.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-medium transition">View Project</a>
+                  <a href="https://github.com/Okailey/ChatGPT-clone" class="inline-block bg-teal-200 hover:bg-blue-400 text-black px-4 py-2 rounded font-medium transition">Github/Demo</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+ <section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</main>
+<!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
 </body>
-
 </html>

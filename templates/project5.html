@@ -1,681 +1,486 @@
-<<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-    <html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <div class="menuBar">
-            <a href="/">Home</a>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-            <a href="/designManifesto"> Design Manifesto</a>
-            <a href="/projects">Projects</a>
-            <a href="/#contact">Contact me</a>
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+      <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
+
+        <nav class="flex flex-col space-y-4">
+
+
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#prep" class="hover:text-blue-600">Process</a>
+        <a href="#answers1" class="hover:text-blue-600">Answers To Questions Based on Paper</a>
+        <a href="#answers2" class="hover:text-blue-600">Answers To Questions For My Next Steps</a>
+        <a href="#design" class="hover:text-blue-600">Designs</a>
+        <a href="#finalproto" class="hover:text-blue-600">Final Prototype </a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+    </nav>
+   </aside>
+
+   <!-- Main Content -->
+   <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+    <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+        <h1 class="text-3xl font-bold text-center"> INSPIRED BY A TRUE STORY/PAPER</h1>
+        <h2 class="text-2xl font-bold text-center"> INTRODUCTION</h2>
+        <p>
+            <strong> I developed several key skills, which include:</strong> </p>
+         <ul class="list-disc list-inside space-y-2">
+            <li><strong>Research Skills: </strong> Demonstrated the ability to select and analyze relevant research
+            papers.</li>
+            <li><strong>Critical Thinking & Analysis: </strong> Applied reflective thinking to evaluate and integrate
+            research
+            insights.</li>
+            <li><strong>Synthesis and Application: </strong>Translated academic findings into a practical design project.
+            </li>
+            </ul>
+
+<p> 
+            This project is going to focus on finding a good research paper that was presented at CHI in recent
+            years,
+            delve into a question/ problem that the paper brought up and ways to solve it by creating a prototype
+            using
+            Figma. The paper I chose was 12 Ways to Empower: Designing for Children’s Digital Autonomy. This dives
+            into
+            ways by which children can learn and be autonomous when using gadgets. The paper highlighted some design
+            mechanisms that have proven to help children in this regard, and I leveraged some of them in the
+            creation of
+            my tool.</p>
+        <p>To interact with the prototype, click <a
+                href="https://www.figma.com/file/i6W5LP2BqdzJ5UA4ZH6lcN/Danielle's-Project?type=design&mode=design&t=w24aVjful5iVU4Zr-1"
+                class="designManifestoLink text-blue-600 font-bold">here</a>.
+
+        </p>
+    </section>
+
+    <section id="prep" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> PROCESS OF PICKING AN AREA</h2>
+        <p>
+
+            I ended up looking at multiple papers by scrolling through both CHI 2024 and CHI 2023 contents for about
+            2
+            hours just to find a good paper that I was interested in. What I was really interested in had to do with
+            blind people being able to learn how to read but required a physical prototype which was not possible in
+            my
+            case, so I landed on two others that seemed interesting. My top 2 picks were 12 Ways to Empower:
+            Designing
+            for Children’s Digital Autonomy and Challenges and Opportunities for Interactive Technology to Support
+            Parents of HIV-Positive Children in Ethiopia in the Disclosure Process. Soon after, reading both
+            abstracts
+            and skimming through the contents, I decided on 12 Ways to Empower: Designing for Children’s Digital
+            Autonomy. </p>
+
+            <div class="flex justify-center items-center gap-6 my-6">
+            <img src="{{ url_for('static', filename='images/Pic1.png') }}" alt="First paper title" class="max-w-full md:max-w-sm ">
+            <img src="{{ url_for('static', filename='images/pic2.png') }}" alt="Abstract from the first paper" class="max-w-full md:max-w-sm ">
+            </div>
+            <div class="flex justify-center items-center gap-6 my-6">
+            <img src="{{ url_for('static', filename='images/pic3.png') }}" alt="Second paper title" class="max-w-full md:max-w-sm ">
+            <img src="{{ url_for('static', filename='images/pic4.png') }}" alt="Abstract from the second paper" class="max-w-full md:max-w-sm ">
+            </div>
+    </section>
+
+    <section id="answers1" class="space-y-4 mt-12 scroll-mt-24">
+  <h2 class="text-2xl font-bold text-center">
+    ANSWERS TO SOME QUESTIONS BASED ON THE DESCRIPTION OF THE ORIGINAL PAPER
+  </h2>
+
+  <p>
+    Below, I will be answering some questions based on the description of the original paper to help me
+    deduce the important areas to focus on and how to think about creating my prototype.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>What was the central problem or question of the paper? (This should be the same
+        problem/question that your project is inspired by!)</strong>
+    </li>
+  </ul>
+
+  <p>The central questions of the paper were:</p>
+
+  <ul class="space-y-2 list-inside">
+    <li>⭐ <strong>RQ1</strong>: How does the HCI literature conceptualize digital autonomy for children?</li>
+    <li>⭐ <strong>RQ2</strong>: What autonomy-supportive design mechanisms have been explored in apps and systems for children?</li>
+  </ul>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>What did the authors do to answer this question or solve this problem?</strong>
+    </li>
+  </ul>
+
+  <p>
+    To answer RQ1, the authors applied a qualitative analysis process through an open-coding approach by
+    first looking for any existing conceptualization on the term “autonomy” and If the paper did not specifically
+    mention the term autonomy, they read through the whole paper to identify what goals or purpose they were
+    trying to support in relation to helping children navigate the digital environment. They then consolidated
+    these into three groups of conceptualizations around digital autonomy.
+  </p>
+
+  <p>
+    To answer RQ2, the authors aimed to identify the design mechanisms used for supporting children’s
+    digital autonomy, so they applied a qualitative analysis process once more through an open-coding approach. They
+    paid extra attention to descriptions around the incentives, motivation, theoretical and ethnographic
+    groundings behind the design by noting down the design details through which it tried to support autonomy
+    (e.g., use of gaming elements, introducing peer collaboration elements, setting default goals for
+    children). They then grouped the prototypes with similar designs which were then compared and consolidated,
+    based on the ways in which children’s digital autonomy is meant to be supported (e.g., through providing
+    external information input, through providing social context). This process led to a total of five high-level
+    categories.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>If there is a tool presented in the paper, did the authors present design requirements for it? If so,
+      what are they?</strong>
+    </li>
+  </ul>
+
+  <p>
+    No, there was no tool presented in the paper, but they did discuss some autonomy design mechanisms that can
+    help children make informed decisions and to have digital autonomy.
+  </p>
+
+  <p>They were:</p>
+
+  <ul class="space-y-2 list-inside">
+    <li>⭐ <strong>Scaffolding</strong>: Providing the appropriate assistance such external information inputs that will give the student enough of a “boost” to achieve the task.</li>
+    <li><i>Types:</i>
+      <ul class="list-disc list-inside space-y-1 ml-4">
+        <li>Just In Time Prompt</li>
+        <li>Informative interaction</li>
+        <li>Scaffold of your own</li>
+      </ul>
+    </li>
+    <li>⭐ <strong>Decomposing</strong>: Provides a natural way of formalizing tacit knowledge through breaking down and providing analogs — “a familiar scenario to think with”, which has a critical place to help children explicitly link their existing knowledge to the more abstract digital concepts.</li>
+    <li><i>Types:</i>
+      <ul class="list-disc list-inside space-y-1 ml-4">
+        <li>Storytelling</li>
+        <li>Gamification</li>
+      </ul>
+    </li>
+    <li>⭐ <strong>Peer Support</strong>: Encourage social interaction between children and their peers in order to promote their digital autonomy.</li>
+    <li><i>Types:</i>
+      <ul class="list-disc list-inside space-y-1 ml-4">
+        <li>Peer Collaboration</li>
+        <li>Peer Comparison</li>
+      </ul>
+    </li>
+    <li>⭐ <strong>Digital playground</strong>: These designs encourage children to freely interact with a digital system which is connected with a physical artefact, thus extending the playground to the physical environment around them.</li>
+    <li>⭐ <strong>Nudging</strong>: These were designed to impose subtle design changes that could alter children’s behaviors and reinforce positive ones and is closely related to the dual process theories for a graphical representation and summary.</li>
+  </ul>
+</section>
+
+
+<section id="answers2" class="space-y-4 mt-12 scroll-mt-24">
+  <h2 class="text-2xl font-bold text-center">
+    ANSWERS TO SOME QUESTIONS BASED ON THE DESCRIPTION OF WHAT I AM GOING TO DO
+  </h2>
+
+  <p>Your description of what you’re going to do must include answers to the following:</p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li><strong>What are you going to make?</strong></li>
+  </ul>
+
+  <p>
+    I am planning on making a prototype for an application that aims to use some of the autonomy design
+    mechanisms to help children make digitally autonomous decisions.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>
+        For your project to satisfyingly solve the problem posed, what does it have to do? (e.g., What
+        information does it have to display? Who does it have to work for? etc) Be specific!
+      </strong>
+    </li>
+  </ul>
+
+  <p>
+    To solve the questions posed, I will make sure that three autonomy design mechanisms are included in the
+    prototype. The designs I have decided to implement are:
+  </p>
+
+  <ul class="space-y-2 list-inside">
+    <li>⭐ Scaffolding - specifically just-in-time prompts</li>
+    <li>⭐ Decomposing - specifically storytelling</li>
+    <li>⭐ Nudging - specifically fear alert</li>
+  </ul>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li><strong>Who does it have to work for?</strong></li>
+  </ul>
+
+  <p>
+    I will also make sure it is intended for children, so making the interface easy to navigate and
+    understand. Since it is for kids, it has to be child protected—meaning there will always be measures in place to
+    make sure that the contents displayed will only be kid friendly. There will be no unnecessary popups but only
+    those to give encouragements and positive alerts.
+  </p>
+
+  <p>
+    I will specifically aim for children who are between 0-5 years because they learn very fast and as has
+    already been discussed in the paper, children between those ages are exposed to gadgets really early so
+    what they learn on it is what they will remember for future use.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li><strong>What information does it have to display?</strong></li>
+  </ul>
+
+  <p>
+    It will be an educational app leveraging different methods to make learning fun so they will be learning
+    objects, watching videos to learn basic math, watch some stories that will teach them about daily life,
+    about strangers and online privacy. It will display information that helps children learn at different stages.
+    So, starting off easy which does not require any prior formal knowledge and allows immediate exploration and
+    soon after, some flexibility for different ages.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li><strong>How is what you are going to make different from what is already in the paper?</strong></li>
+  </ul>
+
+  <p>
+    The paper did not highlight a tool being built and did not talk about all/most of the autonomy design
+    mechanisms in one prototype. I will try to have most of these components in one prototype that I will make.
+  </p>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>
+        If your paper does not include design requirements, write 3 to 5 of your own to follow. If it does, you
+        can use those to inform your design!
+      </strong>
+    </li>
+  </ul>
+
+  <p>
+    For the paper, there were some design requirements for future works: o Identifying critical points of
+    intervention can be of paramount importance. To start with, we recommend designers to consider identifying
+    the critical points that could maximize influence.
+  </p>
+
+  <ul class="space-y-2 list-inside">
+    <li>
+      ⭐ Proposing that future designs should put more emphasis on promoting self-generated knowledge in children —
+      enable children to think critically on issues instead of just habituate to the instructions/cues or being nudged
+      without even realizing it.
+    </li>
+    <li>⭐ Considering translating short-term boosts into longitudinal benefits.</li>
+    <li>
+      ⭐ Considering children’s diverse needs and backgrounds — differentiation and personalization is critical to
+      the effectiveness of designs.
+    </li>
+    <li>
+      ⭐ Ensuring the prototype allows a low floor, high ceiling for children. Here, “low floor” refers to an easy
+      start that does not require any prior formal knowledge and allows immediate exploration; and a “high ceiling”
+      enables more flexibility and provides room for children to grow and explore, especially for those children
+      who were older or with more advanced ability.
+    </li>
+  </ul>
+</section>
+
+
+    <section id="design" class="space-y-4 mt-12 scroll-mt-24"> 
+        <h2 class="text-2xl font-bold text-center">SOME DESIGN LAYOUTS FOR FIGMA!</h2>
+        <p>
+            Below are some of the ideas I came up with to have my prototype looking good and ordered it in terms of
+            visual hierarchy for what I deemed what important, and I could not do without for the prototype to
+            reflect
+            the autonomy design mechanisms I had chosen.
+            For the <strong>first page below,</strong> I was thinking of these: </p>
+           <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic5.png') }}" alt="image showing sketch of the first page and how the pictures change after loading" class="w-full md:w-2/3 lg:w-3/4">
+           </div>
+
+            <p> 
+            For the <strong> menu page below, </strong> was thinking of these: </p>
+            <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic6.png') }}" alt="image showing sketch menu page" class="w-full md:w-2/3 lg:w-2/4">
+            </div>
+           <p>
+            With these sketches I planned on implementing the second sketch for the menu page because I wanted the
+            pop-up overlay to cover the whole page and not just some part of it. I am thinking of adding some gifs
+            and a
+            question asking the user if they need help after the page has been inactive for some time. I did this
+            because some may not know what exactly they need to do so once the page becomes inactive a prompt will
+            show
+            up asking if they need help. If they do, there will be information on the menu page leading them into
+            the
+            right direction and explaining in simple terms what the objects there are. I am also thinking of just
+            adding
+            one gif/picture, so the user is not overwhelmed.
+           </p>
+           <p> 
+            For the <strong> learn math page below,</strong> I was thinking of these: </p>
+           <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic7.png') }}" alt="image showing the sketch of the math page" class="w-full md:w-2/3 lg:w-2/4">
+           </div>
+
+        <p> I thought about implementing the second one because for this, you can watch the video and then answer
+            the
+            questions on the right so easy access to look back at the video but that would mean that the frames will
+            be
+            small, and children love to watch things on big screens and have what they are watching huge enough, so
+            I
+            decided against it. </p>
+
+          
+
+           <p>  For the <strong> stories page below,</strong> I was thinking of these:</p>
+         <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic8.png') }}" alt="image showing the sketch of the stories page" class="w-full md:w-2/3 lg:w-2/4">
+         </div>
+            <p>
+            For the stories page, I decided to go with the first one because it is not too crowded and shows
+            everything
+            systematically from top to bottom because you will first need to watch the video, and then answer the
+            question. The video is the most important thing since it teaches the user about strangers and how to
+            deal
+            with them and that is the essence of decomposition, specifically storytelling.
+            </p>
+        </section>
+
+        <section id="finalproto" class ="space-y-4 mt-12 scroll-mt-24" >
+        <h2 class="text-2xl font-bold text-center"> FINAL TABLET PROTOTYPE ON FIGMA</h2>
+             <h3 class="text-l font-bold text-center">FIRST PAGE AND HOME PAGE RESPECTIVELY</h3>
+        <p>
+            Utilized nudging here to let the user tap on the screen to continue. </p>
+         <div class="flex justify-center items-center gap-6 my-6">
+            <img src="{{ url_for('static', filename='images/pic9.png') }}" alt="image in figma showing the loading page" class="w-full md:w-2/3 lg:w-2/4">
+            <img src="{{ url_for('static', filename='images/pic10.png') }}" alt="image showing alerting the user to click on screen" class="w-full md:w-2/3 lg:w-2/4">
+         </div>
+        
+        <h3 class="text-l font-bold text-center">MENU PAGE</h3>
+        <p>
+            This utilized scaffolding where once inactivity is detected, a prompt will show up to guide you to pick
+            one
+            the
+            buttons.     </p>
+           <div class="flex justify-center items-center gap-6 my-6">
+            <img src="{{ url_for('static', filename='images/pic11.png') }}" alt="image showing menu page" class="w-full md:w-2/3 lg:w-2/4">
+            <img src="{{ url_for('static', filename='images/pic12.png') }}" alt="image showing prompt of -do you need help?" class="w-full md:w-2/3 lg:w-2/4">
+            </div>
+        
+
+      <h3 class="text-l font-bold text-center">LEARN LEVEL 1 MATH AND LEARN LEVEL 2 MATH </h3>
+        <p>
+            From the future works described in the paper, there was a section that talked about low floor, high
+            ceiling
+            and enabling users to advance every time. Once the user has been able to complete the level 1 math, they
+            will move to level 2 math and keep going making room for improvement, so it is not always repetitive
+            because
+            there are different age groups using this. </p>
+           <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic13.png') }}" alt="image showing level1 and level2 math" class="w-full md:w-2/3 lg:w-2/4">
+          </div>
+
+      <h3 class="text-l font-bold text-center">POPUPS WHEN YOU GET AN ANSWER WRONG/ RIGHT </h3>
+        <p> Utilized just in time prompts to help the user make the right choice and acknowledging that making the
+            wrong choice is not bad but it helps us to learn from our mistakes. </p>
+        <div class="flex justify-center items-center gap-6 my-6">
+
+            <img src="{{ url_for('static', filename='images/pic14.png') }}" alt="image prompts telling user they made the wrong choice" class="w-full md:w-2/3 lg:w-2/4">
+            <img src="{{ url_for('static', filename='images/pic15.png') }}" alt="image prompts telling user they made the right choice" class="w-full md:w-2/3 lg:w-2/4">
         </div>
-
-        <div>
-            <br>
-            <br> <br>
-            <br>
-            <h2>INSPIRED BY A TRUE STORY/PAPER</h2>
-            <br>
-            <br>
-            <h1>INTRODUCTION</h1>
-
-            <p>
-
-                <br>
-                <br>
-
-                This project is going to focus on finding a good research paper that was presented at CHI in recent
-                years,
-                delve into a question/ problem that the paper brought up and ways to solve it by creating a prototype
-                using
-                Figma. The paper I chose was 12 Ways to Empower: Designing for Children’s Digital Autonomy. This dives
-                into
-                ways by which children can learn and be autonomous when using gadgets. The paper highlighted some design
-                mechanisms that have proven to help children in this regard, and I leveraged some of them in the
-                creation of
-                my tool.
-            <p>To interact with the prototype, click <a
-                    href="https://www.figma.com/file/i6W5LP2BqdzJ5UA4ZH6lcN/Danielle's-Project?type=design&mode=design&t=w24aVjful5iVU4Zr-1">here</a>.
-            </p>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> PROCESS OF PICKING AN AREA</h1>
-            <p>
-                <br>
-                <br>
-                I ended up looking at multiple papers by scrolling through both CHI 2024 and CHI 2023 contents for about
-                2
-                hours just to find a good paper that I was interested in. What I was really interested in had to do with
-                blind people being able to learn how to read but required a physical prototype which was not possible in
-                my
-                case, so I landed on two others that seemed interesting. My top 2 picks were 12 Ways to Empower:
-                Designing
-                for Children’s Digital Autonomy and Challenges and Opportunities for Interactive Technology to Support
-                Parents of HIV-Positive Children in Ethiopia in the Disclosure Process. Soon after, reading both
-                abstracts
-                and skimming through the contents, I decided on 12 Ways to Empower: Designing for Children’s Digital
-                Autonomy.
-
-                <img src="{{ url_for('static', filename='images/Pic1.png') }}" alt="Project 5" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic2.png') }}" alt="Project 5" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic3.png') }}" alt="Project 5" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic4.png') }}" alt="Project 5" class="image-first">
-
-
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>ANSWERS TO SOME QUESTIONS BASED ON THE DESCRIPTION OF THE ORIGINAL PAPER</h1>
-            <br>
-            <p>
-                <br>
-                Below, I will be answering some questions based on the description of the original paper to help me
-                deduce
-                the important areas to focus on and how to think about creating my prototype.
-                <br>
-                <br>
-
-
-                <strong> 1. What was the central problem or question of the paper? (This should be the same
-                    problem/question that
-                    your project is inspired by!)
-                </strong>
-                <br>
-
-                The central questions of the paper were:
-                <br>
-                RQ1: How does the HCI literature conceptualize digital autonomy for children?
-
-                <br>
-                <br>
-
-
-
-                RQ2: What autonomy-supportive design mechanisms have been explored in apps and systems for children?
-
-
-
-                <br>
-                <br>
-
-
-                <strong> 2. What did the authors do to answer this question or solve this problem?
-                </strong>
-                <br>
-
-                To answer RQ1, the authors applied a qualitative analysis process through an open-coding approach by
-                first
-                looking for any existing conceptualization on the term “autonomy” and If the paper did not specifically
-                mention the term autonomy, they read through the whole paper to identify what goals or purpose they were
-                trying to support in relation to helping children navigate the digital environment. They then
-                consolidated
-                these into three groups of conceptualizations around digital autonomy.
-
-                <br>
-                <br>
-
-
-                To answer RQ2, the authors aimed to identify the design mechanisms used for supporting children’s
-                digital
-                autonomy, so they applied a qualitative analysis process once more through an open-coding approach. They
-                paid extra attention to descriptions around the incentives, motivation, theoretical and ethnographic
-                groundings behind the design by noting down the design details through which it tried to support
-                autonomy
-                (e.g., use of gaming elements, introducing peer collaboration elements, setting default goals for
-                children).
-                They then grouped the prototypes with similar designs which were then compared and consolidated, based
-                on
-                the ways in which children’s digital autonomy is meant to be supported (e.g., through providing external
-                information input, through providing social context). This process led to a total of five high-level
-                categories.
-
-                <br>
-                <br>
-
-
-
-
-                <strong> 3. If there is a tool presented in the paper, did the authors present design requirements for
-                    it? If so,
-                    what are they?
-                </strong>
-
-                <br>
-
-
-                No, there was no tool presented in the paper, but they did discuss some autonomy design mechanisms that
-                can
-                help children make informed decisions and to have digital autonomy.
-                <br>
-
-                They were:
-                <br>
-                • Scaffolding
-                <br>
-
-                Providing the appropriate assistance such external information inputs that will give the student
-                enough of
-                a “boost” to achieve the task .
-                <br>
-
-                <strong> Types</strong>
-            <p>
-
-                 Just In Time Prompt
-                <br>
-
-                 Informative interaction
-                <br>
-                 Scaffold of your own
-
-
-                <br>
-
-
-                <br>
-
-                • Decomposing
-                <br>
-                Provides a natural way of formalizing tacit knowledge through breaking down and providing analogs — “a
-                familiar scenario to think with” , which has a critical place to help children explicitly link their
-                existing knowledge to the more abstract digital concepts.
-                <br>
-
-                <strong> Types</strong>
-                <br>
-
-
-                 Storytelling
-                <br>
-                 Gamification
-
-
-
-
-
-                <br>
-
-                <br>
-
-                • Peer Support
-                <br>
-                o Encourage social interaction between children and their peers in order to promote their digital
-                autonomy.
-                <br>
-                <strong> Types</strong>
-                <br>
-                 Peer Collaboration
-                <br>
-                 Peer Comparison
-
-                <br>
-
-                <br>
-
-                • Digital playground
-                o These designs encourage children to freely interact with a digital system which is connected with a
-                physical artefact, thus extending the playground to the physical environment around them.
-
-                <br>
-
-                <br>
-
-                • Nudging
-                o These were designed to impose subtle design changes that could alter children’s behaviors and
-                reinforce
-                positive ones and is closely related to the dual process theories for a graphical representation and
-                summary.
-
-                <br>
-
-            </p>
-
-            <br>
-            <br>
-
-
-            <br>
-            <br>
-            </p>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> ANSWERS TO SOME QUESTIONS BASED ON THE DESCRIPTION OF WHAT I AM GOING TO DO</h1>
-            <p>
-                <br>
-                <br>
-
-                Your description of what you’re going to do must include answers to the following:
-                <strong> 1. What are you going to make?
-                </strong>
-
-                <br>
-                <br>
-                I am planning on making a prototype for an application that aims to use some of the autonomy design
-                mechanisms to help children make digitally autonomous decisions.
-
-                <br>
-                <br>
-                <strong> 2. For your project to satisfyingly solve the problem posed, what does it have to do? (e.g.,
-                    What
-                    information does it have to display? Who does it have to work for? etc) Be specific!</strong>
-
-                <br>
-                <br>
-                To solve the questions posed, I will make sure that three autonomy design mechanisms are included in the
-                prototype. The designs I have decided to implement are :
-                <br>
-                o Scaffolding - specifically just-in-time prompts
-                <br>
-                o Decomposing - specifically storytelling
-                <br>
-                o Nudging - specifically fear alert
-
-                <br>
-                <br>
-                <strong> Who does it have to work for?</strong>
-                I will also make sure it is intended for children, so making the interface easy to navigate and
-                understand.
-                Since it is for kids, it has to be child protected- meaning there will always be measures in place to
-                make
-                sure that the contents displayed will only be kid friendly. There will be no unnecessary popups but only
-                those to give encouragements and positive alerts.
-
-                <br>
-                <br>
-                I will specifically aim for children who are between 0-5 years because they learn very fast and as has
-                already been discussed in the paper, children between those ages are exposed to gadgets really early so
-                what
-                they learn on it is what they will remember for future use.
-
-
-                <br>
-                <br>
-                <strong> What information does it have to display?</strong>
-                It will be an educational app leveraging different methods to make learning fun so they will be learning
-                objects, watching videos to learn basic math, watch some stories that will teach them about daily life,
-                about strangers and online privacy.
-                It will display information that helps children learn at different stages. So, starting off easy which
-                does
-                not require any prior formal knowledge and allows immediate exploration and soon after, some flexibility
-                for
-                different ages.
-
-                <br>
-                <br>
-
-                <strong> 3. How is what you are going to make different from what is already in the paper?
-                </strong>
-                <br>
-                <br>
-                The paper did not highlight a tool being built and did not talk about all/most of the autonomy design
-                mechanisms in one prototype. I will try to have most of these components in one prototype that I will
-                make.
-
-                <br>
-                <br>
-                <strong> 4. If your paper does not include design requirements, write 3 to 5 of your own to follow. If
-                    it does,
-                    you
-                    can use those to inform your design!</strong>
-
-                <br>
-                <br>
-                For the paper, there were some design requirements for future works:
-                o Identifying critical points of intervention can be of paramount importance. To start with, we
-                recommend
-                designers to consider identifying the critical points that could maximize influence.
-                <br>
-                <br>
-                o Proposing that future designs should put more emphasis on promoting self-generated knowledge in
-                children —
-                enable children to think critically on issues instead of just habituate to the instructions/cues or
-                being
-                nudged without even realizing it.
-                <br>
-                <br>
-                o Considering translating short-term boosts into longitudinal benefits.
-                <br>
-                <br>
-                o Considering children’s diverse needs and backgrounds — differentiation and personalization is critical
-                to
-                the effectiveness of designs.
-                <br>
-                <br>
-                o Ensuring the prototype allows a low floor, high ceiling for children. Here, “low floor” refers to an
-                easy
-                start that does not require any prior formal knowledge and allows immediate exploration; and a “high
-                ceiling” enables more flexibility and provides room for children to grow and explore, especially for
-                those
-                children who were older or with more advanced ability.
-
-
-                <br>
-                <br>
-
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>SOME DESIGN LAYOUTS FOR FIGMA!</h1>
-            <p>
-
-                <br>
-                Below are some of the ideas I came up with to have my prototype looking good and ordered it in terms of
-                visual hierarchy for what I deemed what important, and I could not do without for the prototype to
-                reflect
-                the autonomy design mechanisms I had chosen.
-
-                <br>
-                For the first page, I was thinking of these:
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic5.png') }}" alt="pic5.png" class="image-first">
-
-                <br>
-                <br>
-                For the menu page, I was thinking of these:
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic6.png') }}" alt="pic6.png" class="image-first">
-
-                <br>
-                <br>
-                With these sketches I planned on implementing the second sketch for the menu page because I wanted the
-                pop-up overlay to cover the whole page and not just some part of it. I am thinking of adding some gifs
-                and a
-                question asking the user if they need help after the page has been inactive for some time. I did this
-                because some may not know what exactly they need to do so once the page becomes inactive a prompt will
-                show
-                up asking if they need help. If they do, there will be information on the menu page leading them into
-                the
-                right direction and explaining in simple terms what the objects there are. I am also thinking of just
-                adding
-                one gif/picture, so the user is not overwhelmed.
-
-                <br>
-                <br>
-                For the learn math page, I was thinking of these:
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic7.png') }}" alt="pic7.png" class="image-first">
-
-
-            </p>
-            <br>
-            <br>
-
-            <p> I thought about implementing the second one because for this, you can watch the video and then answer
-                the
-                questions on the right so easy access to look back at the video but that would mean that the frames will
-                be
-                small, and children love to watch things on big screens and have what they are watching huge enough, so
-                I
-                decided against it.
-
-                <br>
-                <br>
-
-                For the stories page, I was thinking of these:
-                <br>
-                <br>
-
-                <img src="{{ url_for('static', filename='images/pic8.png') }}" alt="pic8.png" class="image-first">
-
-                <br>
-                <br>
-                For the stories page, I decided to go with the first one because it is not too crowded and shows
-                everything
-                systematically from top to bottom because you will first need to watch the video, and then answer the
-                question. The video is the most important thing since it teaches the user about strangers and how to
-                deal
-                with them and that is the essence of decomposition, specifically storytelling.
-
-                <br>
-                <br>
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1> FINAL TABLET PROTOTYPE ON FIGMA
-                <br>
-                <br>
-                FIRST PAGE AND HOME PAGE
-            </h1>
-            <p>
-                <img src="{{ url_for('static', filename='images/pic9.png') }}" alt="pic9.png" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic10.png') }}" alt="pic10.png" class="image-first">
-
-                <br>
-                <br>
-                Utilized nudging here to let the user tap on the screen to continue.
-                <br>
-                <br>
-                <br>
-                <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>MENU PAGE</h1>
-            <br>
-            <br>
-            <p>
-                <img src="{{ url_for('static', filename='images/pic11.png') }}" alt="pic11.png" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic12.png') }}" alt="pic12.png" class="image-first">
-            </p>
-            <br>
-            <br>
-            <p> This utilized scaffolding where once inactivity is detected, a prompt will show up to guide you to pick
-                one
-                the
-                buttons.
-            </p>
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>LEARN LEVEL 1 MATH AND LEARN LEVEL 2 MATH </h1>
-            <br>
-            <p>
-                From the future works described in the paper, there was a section that talked about low floor, high
-                ceiling
-                and enabling users to advance every time. Once the user has been able to complete the level 1 math, they
-                will move to level 2 math and keep going making room for improvement, so it is not always repetitive
-                because
-                there are different age groups using this.
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic13.png') }}" alt="pic13.png" class="image-first">
-
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-
-            <h1>POPUPS WHEN YOU GET AN ANSWER WRONG/ RIGHT </h1>
-            <br>
-            <p> Utilized just in time prompts to help the user make the right choice and acknowledging that making the
-                wrongchoice is not bad but it helps us to learn from our mistakes.
-                <br>
-
-                <img src="{{ url_for('static', filename='images/pic14.png') }}" alt="pic14.png" class="image-first">
-                <img src="{{ url_for('static', filename='images/pic15.png') }}" alt="pic15.png" class="image-first">
-            <p>
-                <br>
-                <br>
-                <br>
-                <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>STORIES PAGE</h1>
-            <br>
-            <br>
-            <p>I utilized decomposition(storytelling) here by getting the user learn about strangers and dangers in a
-                form
-                of a
-                story and then nudging them to choose the right choice with the arrow under the correct answer.
-
-                <br>
-                <br>
-                <img src="{{ url_for('static', filename='images/pic16.png') }}" alt="pic16.png" class="image-first">
-            </p>
-            <p>
-
-                <br>
-                <br>
-                <br>
-                <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-            <h1>OBJECTS PAGE</h1>
-            <br>
-            <br>
-            <p>
-                <img src="{{ url_for('static', filename='images/pic17.png') }}" alt="pic17.png" class="image-first">
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <div
-                style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            </div>
-            <br>
-            <br>
-
-            <h1> CONCLUSION</h1>
-            <p>
-                The most difficult part of this project was finding a good enough paper that resonated with me. I went
-                through about 20 papers which took most of my time and because of that, I did not start the process of
-                creating this design document early enough. I was able to implement 3 of the autonomy design mechanisms
-                in
-                one prototype.
-                <br>
-                Initially, I tried to do most of the pages with all of the autonomy design mechanisms but
-                realized quickly that I was not going to have enough time. I built a total of 7 pages with some side
-                pages
-                for functionality. What can be improved would be adding sounds to the prototype when there is an
-                interaction
-                between the user and the gadget, to enable them to learn how to pronounce some words and even how they
-                will
-                remember some terms to use when talking to others.
-                <br>
-                Adding some more pages for functionality would be a
-                plus
-                as well for future works. The strengths that the prototype has are that there is great functionality
-                displayed which highlights some key points raised above and it is not mentally overwhelming to interact
-                with. Overall, the prototype needs a few touch ups to be perfect.
-
-            <p>
-                <br>
-                <br>
-                <br>
-
-                <br>
-
-                <br>
-                <br>
-            <div class="theFooter">
-                <footer>
-                    <p1> Danielle Quaye</p1>
-                </footer>
-            </div>
-
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    var footer = document.querySelector('.theFooter');
-
-                    window.addEventListener('scroll', function () {
-                        // Calculate how far the user has scrolled
-                        var scrollPosition = window.innerHeight + window.pageYOffset;
-                        var bodyHeight = document.body.offsetHeight;
-
-                        // If the user has scrolled to the bottom of the page, show the footer
-                        if (scrollPosition >= bodyHeight) {
-                            footer.classList.add('footer-visible');
-                        } else {
-                            footer.classList.remove('footer-visible');
-                        }
-                    });
-                });
-            </script>
-
-            <br>
-
-            <br>
-            <br>
-    </body>
-
-    </html>
+           
+
+        <h3 class="text-l font-bold text-center">STORIES PAGE</h3>
+        <p>I utilized decomposition(storytelling) here by getting the user learn about strangers and dangers in a
+            form
+            of a
+            story and then nudging them to choose the right choice with the arrow under the correct answer. </p>
+ <div class="flex justify-center items-center my-6"> 
+            <img src="{{ url_for('static', filename='images/pic16.png') }}" alt="image showing the stories page" class="w-full md:w-2/3 lg:w-2/4">
+</div>
+       
+
+       <h3 class="text-l font-bold text-center">OBJECTS PAGE</h3>
+  
+      <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/pic17.png') }}" alt="image showing the objects page" class="w-full md:w-2/3 lg:w-2/4">
+       </div>
+
+
+
+       <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center"> CONCLUSION</h2>
+        <p>
+            The most difficult part of this project was finding a good enough paper that resonated with me. I went
+            through about 20 papers which took most of my time and because of that, I did not start the process of
+            creating this design document early enough. I was able to implement 3 of the autonomy design mechanisms
+            in
+            one prototype.
+        </p>
+        <p>
+            Initially, I tried to do most of the pages with all of the autonomy design mechanisms but
+            realized quickly that I was not going to have enough time. I built a total of 7 pages with some side
+            pages
+            for functionality. What can be improved would be adding sounds to the prototype when there is an
+            interaction
+            between the user and the gadget, to enable them to learn how to pronounce some words and even how they
+            will
+            remember some terms to use when talking to others.
+        </p>
+        <p>
+            Adding some more pages for functionality would be a
+            plus
+            as well for future works. The strengths that the prototype has are that there is great functionality
+            displayed which highlights some key points raised above and it is not mentally overwhelming to interact
+            with. Overall, the prototype needs a few touch ups to be perfect.
+
+        </p>
+    </section>
+<section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </article>
+
+<!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+
+</body>
+
+</html>

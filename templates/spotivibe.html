@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
+
+        <nav class="flex flex-col space-y-4">
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#challenges" class="hover:text-blue-600">Challenges</a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+
+        </nav>
+   </aside>
+
+<article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+
+  <!-- Introduction -->
+  <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+    <h1 class="text-3xl font-bold text-center">SpotiVibe</h1>
+    <p>
+      SpotiVibe is a full-stack web application built using React, Express, Firebase, and the Spotify API.
+      The goal of the project was to extend Spotify beyond passive listening by creating a space where
+      users can express their music taste, interact with others, and engage in music-related discussions.
+    </p>
+    <p>
+      Although users authenticate using Spotify, SpotiVibe maintains a separate user profile system.
+      This allows users to customize their profiles, control visibility, and interact with others
+      independently of their Spotify accounts.
+    </p>
+  </section>
+
+  <!-- Why SpotiVibe -->
+  <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">WHY SpotiVibe?</h2>
+    <p>
+      While Spotify allows users to stream songs and follow friends, it does not allow them to express
+      their music taste beyond playlisting. SpotiVibe fills this gap by transforming music listening
+      into an interactive and community-driven experience.
+    </p>
+    <p>
+  Through SpotiVibe, users can discover new music and artists, track their listening habits, and
+  engage in conversations about music news and trends. In addition, users can create discussion
+  boards, interact with posts, and easily search forums to find relevant topics.
+</p>
+  </section>
+
+
+  <!-- Pages -->
+  <section id="features" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">FEATURES</h2>
+    <p>
+  I worked extensively on the forum page, implementing core interactive features such as post
+  creation, liking posts, and commenting. These features allowed users to actively engage in
+  discussions rather than passively consuming content, reinforcing SpotiVibe’s goal of being a
+  community-driven platform.
+</p>
+<p>
+  I also contributed to improving forum navigation by enabling users to search forums by name,
+  making it easier to discover relevant discussions as the platform scaled.
+</p>
+<p>
+      SpotiVibe consists of several pages designed to highlight music discovery,
+      personalization, and social interaction.
+    </p>
+
+    <ul class="list-disc list-inside space-y-2">
+      <li><strong>Liked Songs:</strong> Displays a user’s liked songs along with album artwork.</li>
+       <li><strong>Forum:</strong> Allows users to create and engage in music-related discussions.</li>
+      <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/spoti3.png') }}" alt="image showing forum page of spotivibe with a dark and green theme" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+      <li><strong>Top Artists & Songs:</strong> Shows listening data for all time, last year, and last month.</li>
+      <li><strong>User Profile:</strong> Allows users to edit their profile, display selected artists or songs, and set their profile as public or private.</li>
+      <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/spoti0.png') }}" alt="image showing homepage of spotivibe with a dark and green theme" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+      <li><strong>Discover:</strong> Displays all public users so profiles can be explored and messages sent.</li>
+      <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/spoti1.png') }}" alt="image showing homepage of spotivibe with a dark and green theme" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+      <li><strong>Inbox:</strong> Enables direct messaging between users.</li>
+      <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/spoti2.png') }}" alt="image showing homepage of spotivibe with a dark and green theme" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+    </ul>
+  </section>
+
+
+  <!-- Challenges -->
+  <section id="challenges" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">CHALLENGES FACED</h2>
+    <p>
+      One of the main challenges was managing an ambitious feature scope under a tight timeline.
+      As the team explored functionality beyond classroom learning, this introduced more bugs and
+      increased debugging time.
+    </p>
+    <p>
+      Additional challenges included the lack of personalization on the discovery page.
+      Mantine UI also proved difficult to work with, as it occasionally disrupted layout consistency
+      across different pages.
+    </p>
+  </section>
+
+  <!-- Conclusion -->
+  <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">CONCLUSION</h2>
+    <p>
+      SpotiVibe demonstrates how music platforms can evolve beyond listening by fostering expression,
+      discussion, and community. 
+      Some additional enhancements that could have been implemented if time permitted included allowing users to display and link songs or playlists on their
+      profiles, adding interactive music statistics visualizations using charts and graphs, and
+      enabling nested comments with profile navigation.
+
+    </p>
+  </section>
+  <section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</article>
+
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+
+
+</body>
+
+
+</html>

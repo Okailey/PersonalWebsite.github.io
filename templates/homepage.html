@@ -1,148 +1,190 @@
-<<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-    <html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
-    </head>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="menuBar">
-            <a href="/">Home</a>
-            <a href="/designManifesto">Design Manifesto</a>
-            <a href="/projects">Projects</a>
-            <a href="#contact">Contact me</a>
-        </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <div>
-            <!-- Introduction/Welcome Message -->
-            <section id="home">
-                <h2>Welcome to my website!</h2>
-                <br>
-                <p>My name is Danielle Quaye and the purpose of this website is to showcase my passion and achievements
-                    and
-                    for you to get to know me better.
-                </p>
-            </section>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
+<style>
+  @keyframes shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
 
-        <img src="{{ url_for('static', filename='images/webPhoto.jpg') }}" alt="webPhoto.jpg" class="front-photo">
-        <br>
-        <br>
-        <br>
-        <br>
+  .shimmer-text {
+    background: linear-gradient(
+      90deg,
+      #3b82f6,
+      #22c55e,
+      #a855f7,
+      #3b82f6
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shimmer 3s linear infinite;
+  }
+</style>
 
 
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            <br>
-            <br>
-            <br>
-        </div>
-        <br>
-        <br>
-        <br>
-        <!-- About Me -->
-        <section id="about">
-            <h2>About Me</h2>
-            <br>
-            <br>
-            <p> I am an undergraduate majoring in Computer Science at Mount Holyoke College. I am yet to graduate in
-                December 2025. I am very passionate about tennis as I have been playing the sport since I was 3 years
-                old. I love computer science because of what I do. I am able to create things from scratch and see them
-                come to life. I love to learn new things to expand my skill set and technical know-how. Giving up is
-                never an option because with determination, I will achieve what I set my mind to. </p>
-        </section>
+</head>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div
-            style="width: 70%; height: 10px; background-color: #9cbaba; border-radius: 10px; box-shadow: 2px 2px 4px rgba(9, 9, 9, 0.1); margin-left: 200px;">
-            <br>
-            <br>
-            <br>
-        </div>
-        <br>
-        <br>
-        <br>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-links">
-                <div class="contact-item">
-                    <p>Email me <a href="mailto:quaye22d@mtholyoke.edu">here</a></p>
-                    <img src="{{ url_for('static', filename='images/email.jpg') }}" alt="email.jpg"
-                        class="contact-image">
-                </div>
-                <div class="contact-item">
-                    <p>My GitHub <a href="https://github.com/Okailey">here</a></p>
-                    <img src="{{ url_for('static', filename='images/githublogo.png') }}" alt="githublogo.png"
-                        class="contact-image">
-                </div>
-                <div class="contact-item">
-                    <p>My LinkedIn, let's connect <a href="https://www.linkedin.com/in/danielle-quaye"
-                            target="_blank">here</a></p>
-                    <img src="{{ url_for('static', filename='images/linkLogo.png') }}" alt="linkLogo.png"
-                        class="contact-image">
-                </div>
-            </div>
-        </section>
-
-        <br>
-        <br>
-        <br>
-        <br>
+<body class="font-sans bg-gradient-to-br from-[#DCFFFD] via-purple-100 to-white font-sans">
 
 
-        <div class="theFooter">
-            <footer>
-                <p1> Danielle Quaye</p1>
-            </footer>
-        </div>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!-- Hero Section -->
+  <main class="pt-24">
+  
+ <section
+  class="min-h-screen flex flex-col justify-center items-center text-center px-4
+bg-gradient-to-br from-[#DCFFFD] via-purple-100 to-white text-black">
 
 
+        <img src="{{ url_for('static', filename='images/webPhoto.jpg') }}"
+  alt="Portrait of Danielle Quaye"
+  class="w-80 h-80 rounded-full object-cover mx-auto">
 
+      <h1 class="text-5xl font-extrabold mb-4">
+  Hi, I'm
+  <span class="shimmer-text">Danielle</span>!
+</h1>
+      <p class="text-xl max-w-xl mb-6">
+         I am a resilient individual and a learner ready to take on new challenges. 
+           <div class="flex justify-center space-x-6 flex-wrap">
+  <a href="/projects.html"
+   class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition">
+   Check Out My Work
+</a>
+  </div>
+      </p>
+    </section>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var footer = document.querySelector('.theFooter');
+    <!--Skills-->
+    <section id="skills" class="py-20 bg-gray-50">
+  <h2 class="text-3xl font-bold text-center mb-12">My Skills & Tech Stack</h2>
 
-                window.addEventListener('scroll', function () {
-                    // Calculate how far the user has scrolled
-                    var scrollPosition = window.innerHeight + window.pageYOffset;
-                    var bodyHeight = document.body.offsetHeight;
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
-                    // If the user has scrolled to the bottom of the page, show the footer
-                    if (scrollPosition >= bodyHeight) {
-                        footer.classList.add('footer-visible');
-                    } else {
-                        footer.classList.remove('footer-visible');
-                    }
-                });
-            });
-        </script>
-    </body>
+    <!-- Programming Languages -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4 text-center">Programming Languages</h3>
+      <div class="flex flex-wrap gap-2 justify-center">
+        <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">Python</span>
+        <span class="px-4 py-1 bg-green-100 text-green-800 rounded-full font-medium">Java</span>
+        <span class="px-4 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">JavaScript</span>
+        <span class="px-4 py-1 bg-pink-100 text-pink-800 rounded-full font-medium">Swift</span>
+        <span class="px-4 py-1 bg-red-100 text-red-800 rounded-full font-medium">C</span>
+        <span class="px-4 py-1 bg-teal-100 text-teal-800 rounded-full font-medium">C#</span>
+        <span class="px-4 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">HTML</span>
+        <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">CSS</span>
+        <span class="px-4 py-1 bg-red-100 text-red-800 rounded-full font-medium">TypeScript</span>
+      </div>
+    </div>
 
-    </html>
+    <!-- Frameworks & tools -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4 text-center">Frameworks & Tools</h3>
+      <div class="flex flex-wrap gap-2 justify-center">
+        <span class="px-4 py-1 bg-purple-100 text-purple-800 rounded-full font-medium">Flask</span>
+        <span class="px-4 py-1 bg-gray-200 text-gray-800 rounded-full font-medium">Node.js</span>
+        <span class="px-4 py-1 bg-indigo-100 text-indigo-800 rounded-full font-medium">Bootstrap</span>
+        <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">React.js</span>
+        <span class="px-4 py-1 bg-green-100 text-green-800 rounded-full font-medium">Tailwind CSS</span>
+        <span class="px-4 py-1 bg-red-100 text-red-800 rounded-full font-medium">APIs</span>
+        <span class="px-4 py-1 bg-purple-100 text-purple-800 rounded-full font-medium">Express.js</span>
+        <span class="px-4 py-1 bg-teal-100 text-teal-800 rounded-full font-medium">Svelte</span>
+        <span class="px-4 py-1 bg-gray-200 text-gray-800 rounded-full font-medium">Figma</span>
+         <span class="px-4 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">Svelte</span>
+      </div>
+    </div>
+
+    <!-- cloud & Databases / DevOps -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4 text-center">Cloud & Databases</h3>
+      <div class="flex flex-wrap gap-2 justify-center">
+        <span class="px-4 py-1 bg-orange-100 text-orange-800 rounded-full font-medium">AWS</span> 
+        <span class="px-4 py-1 bg-red-100 text-red-800 rounded-full font-medium">Docker</span>
+        <span class="px-4 py-1 bg-green-100 text-green-800 rounded-full font-medium">Microsoft Azure</span>
+        <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">Firebase (NoSQL)</span>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4 text-center">Soft Skills/Methodologies</h3>
+      <div class="flex flex-wrap gap-2 justify-center">
+        <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full font-medium">Agile</span>
+        <span class="px-4 py-1 bg-pink-100 text-pink-800 rounded-full font-medium">Communication</span>
+        <span class="px-4 py-1 bg-yellow-100 text-yellow-800 rounded-full font-medium">Collaboration</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="flex flex-col items-center text-center px-4 py-20
+bg-gradient-to-br from-[#DCFFFD] via-purple-100 to-white text-black">
+  <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+  <p class="text-lg max-w-xl mx-auto mb-8">
+    I'm always open to new opportunities, collaborations, or just a friendly chat about technology and design. Feel free to reach out!
+  </p>
+
+  <div class="flex justify-center space-x-4 flex-wrap">
+    <a href="mailto:quaye22d@mtholyoke.edu"
+      class="inline-flex items-center px-4 py-3 bg-green-500 hover:bg-green-600 text-white rounded-md font-medium transition">
+      <i class="fa-solid fa-envelope mr-1"></i> Email
+    </a>
+
+    <a href="https://github.com/Okailey" target="_blank"
+      class="inline-flex items-center px-4 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-md font-medium transition">
+      <i class="fa-brands fa-github mr-1"></i> GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/danielle-quaye" target="_blank"
+      class="inline-flex items-center px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition">
+      <i class="fa-brands fa-linkedin mr-1"></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+  </main>
+ <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+
+</body>
+
+</html>
+

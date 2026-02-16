@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <div class="menuBar">
+        <a href="/">Home</a>
+        <a href="/AboutMe.html">About</a>
+        <!-- <a href="/designManifesto.html">Design Manifesto</a> -->
+        <a href="/projects.html">Projects</a>
+        <a href="#contact">Get In Touch</a>
+    </div>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="introduction-section">
+        <!-- Welcome Message -->
+        <!-- <div class="welcome-message">
+            <p>Welcome!</p>
+
+        </div> -->
+
+        <div class="bio-and-photo">
+            <!-- Picture -->
+            <img src="{{ url_for('static', filename='images/webPhoto.jpg') }}" alt="webPhoto.jpg" class="front-photo">
+
+            <!-- Bio Section -->
+            <section id="about">
+                <p>
+                    Hello, I'm Danielle! I'm a passionate problem-solver who loves to build creative and impactful
+                    solutions.
+                    This website showcases my projects, a chance to connect with
+                    like-minded
+                    individuals and for you to get to know me better.
+                </p>
+
+                <p>If you would like to see my full resume, you can download it here:</p>
+
+                <!-- Container for Bio text and Resume button -->
+                <div class="resume-container">
+                    <a href="{{ url_for('static', filename='DQ(2025).pdf') }}" download="Danielle_Quaye_Resume.pdf"
+                        class="resume-btn">Download My Resume</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    Skills Section
+    <section id="skills">
+        <h2>My Skills</h2>
+        <br>
+        <br>
+        <div class="skills-list">
+            <!-- Skill 1 -->
+            <div class="skill-item">
+                <h2>Programming Languages</h2>
+                <ul>
+
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li> Swift</li>
+
+                </ul>
+            </div>
+            <!-- Skill 2 -->
+            <div class="skill-item">
+                <h2>Web & Mobile Development</h2>
+                <ul>
+                    <li>Flask</li>
+                    <li> HTML/CSS</li>
+                    <li>Bootstrap</li>
+                    <li>APIs</li>
+                </ul>
+            </div>
+            <!-- Skill 3 -->
+            <div class="skill-item">
+                <h2>Software Development</h2>
+                <ul>
+                    <li>Object-Oriented Programming</li>
+                    <li>Model-View-Controller (MVC) Architecture</li>
+                    <li>JUnit Testing</li>
+                </ul>
+            </div>
+            <!-- Skill 4 -->
+            <div class="skill-item">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Collaboration & Teamwork</li>
+                    <li>Effective Communication</li>
+                    <li>Adaptability</li>
+                    <li>Emotional Intelligence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+
+
+    <br>
+    <br>
+    <br>
+    <section id="contact">
+        <h2> Contact me</h2>
+        <div class='contact bio'>
+            <p>I’d love to hear from you! Whether you have a question, an idea to share, want to collaborate on
+                projects, or just want to chat, feel free
+                to
+                reach out.</p>
+        </div>
+        <div class="contact-container">
+            <!-- Email -->
+            <div class="contact-item">
+                <a href="mailto:quaye22d@mtholyoke.edu">
+                    <img src="{{ url_for('static', filename='images/envelope-2.svg') }}" alt="Email">
+                </a>
+            </div>
+            <!-- GitHub -->
+            <div class="contact-item">
+                <a href="https://github.com/Okailey" target="_blank">
+                    <img src="{{ url_for('static', filename='images/github.svg') }}" alt="GitHub">
+                </a>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+
+                <a href="https://www.linkedin.com/in/danielle-quaye" target="_blank">
+                    <img src="{{ url_for('static', filename='images/linkedin.svg') }}" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <button id="goToTopBtn" title="Go to top">↑</button>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+
+</html>
+
+
+
+#### ABOUT
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="menuBar">
+        <a href="/">Home</a>
+        <a href="/AboutMe.html">About</a>
+        <!-- <a href="/designManifesto.html">Design Manifesto</a> -->
+        <a href="/projects.html">Projects</a>
+        <a href="/#contact">Get In Touch</a>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Danielle Quaye </h2>
+    </div>
+    <br>
+    <p> Hi! I'm Danielle Quaye, pursuing a <strong>Computer Science degree at Mount Holyoke College </strong> with a
+        passion for
+        creating
+        innovative solutions with the aim of helping others. My interests lie <strong> in software development, product
+            management, artificial
+            intelligence and robotics</strong>. Originally from Ghana, I bring a
+        unique perspective and
+        dedication to my work, aiming to build technology that can make a real impact in society.
+        <br>
+        <br>
+
+        I have hands-on experience <strong> developing web applications</strong>, software design and I'm always eager
+        to learn new tools
+        and techniques to expand my skills.
+        Recently, I’ve had the opportunity to explore <strong>motion planning with
+            Duckiebots</strong>, which has deepened my interest in robotics and autonomous systems. This experience has
+        taught me to solve complex challenges creatively, blending my technical knowledge with problem-solving
+        skills.
+        <br>
+        <br>
+
+        There have been many exciting projects I have worked on and you can view them <a href="/projects.html"
+            class="designManifestoLink">here</a>.
+
+        Through these projects I
+        have gained experience with <strong> Python, Flask, HTML/CSS, JavaScript, Java, Swift, and C#</strong>.
+
+        <br>
+        <br>
+
+        I love this path I have chosen because I find joy in seeing a smile on the face of others when something I
+        have contributed to or created has impacted their lives positively. Whether it is
+        creating solutions to solve global challenges or improve the lives of people with efficient algorithms
+        or creating user-friendly applications, I want to make a positive impact and that is what drives me.
+
+        I look forward to applying my skills in collaborative and challenging environments, contributing to
+        projects that make a difference in people's lives.
+
+        <br>
+        <br>
+        Outside of coding and the world of technology, I enjoy playing <strong> tennis </strong> and volunteering in
+        Dennis Tennis
+        Serving
+        Love Nonprofit to inspire and mentor unprivileged children who are interested in tennis.
+    </p>
+
+    <p>
+        If you would love to learn more about me, you can view my resume
+        <a href="{{ url_for('static', filename='DQ(2025).pdf') }}" target="_blank" class="resumeLink">here</a> and read
+        my design manifesto <a href="/designManifesto.html" class="designManifestoLink">here</a>.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="goToTopBtn" title="Go to top">↑</button>
+    <button id="goBackBtn" title="Go back" onclick="history.back()">←</button>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
+
+
+
+
+#PROJECTS
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black-600">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+
+    <div class="container">
+        <h1> Human-Computer Interaction Projects</h1>
+        <br>
+        <h3>Below are a list of projects I have developed and/or contributed to.</h3>
+        <br><br><br>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/project1.html">
+                        <img src="{{ url_for('static', filename='images/ig1.png') }}" alt="Project 1">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> Designing For Other People</h2>
+                    <p>This project involved developing ideas to solve a specific solution for a target user. It goes
+                        into ways to brainstorm to get the products suitable for a specified user. </p>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/project2.html">
+                        <img src="{{ url_for('static', filename='images/ig2.png') }}" alt="Project 2">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> Re(Designing) For People</h2>
+                    <p>This project involves targeting a specific group of people to redesign an already exsiting
+                        website for. Utilized Figma.</p>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/project3.html">
+                        <img src="{{ url_for('static', filename='images/ig3.png') }}" alt="Project 3">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> Designing For Community</h2>
+                    <p>The goal of this project was to design technology to help with community-building at Mount
+                        Holyoke. Utilized Figma.</p>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/project4.html">
+                        <img src="{{ url_for('static', filename='images/ig4.png') }}" alt="Project 4">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> Seeking & Integrating feeback</h2>
+                    <p>The aim of this project was to evaluate a prototype that I made for a prior project and then use
+                        a
+                        method(Cognitive walkthrough) and survey to collect informative data from the users. Utilized
+                        Figma. </p>
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/project5.html">
+                        <img src="{{ url_for('static', filename='images/ig5.png') }}" alt="Project 5">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> Inspired By A True Story/Paper</h2>
+
+                    <p>This project focused on finding a good research paper that was presented at ACM (Association of
+                        Computing Machinery) CHI conference on Human Factors in Computing Systems in
+                        recent
+                        years, delve into a question/ problem that the paper brought up and ways to solve it by creating
+                        a
+                        prototype using Figma. The paper I chose was 12 Ways to Empower: Designing for Children’s
+                        Digital Autonomy.</p>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br>
+            <!-- Add more projects similarly -->
+
+        </div>
+        <br><br><br><br>
+        <h1> Software Design & Development Project</h1>
+        <br><br>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/projectwordle.html">
+                        <img src="{{ url_for('static', filename='images/wordless.png') }}" alt="Wordle">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> Wordle</h2>
+                    <p> This project was developed in Java using Eclipse, and it focused on creating an engaging
+                        word-guessing experience to mimic the famous Wordle from the New York Times.</p>
+                </div>
+            </div>
+
+             <div class="project-item">
+                <div class="project-card">
+                    <a href="/reciMe.html">
+                        <img src="{{ url_for('static', filename='images/recime.png') }}" alt="Recipe Finder">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> ReciMe</h2>
+                    <p> This project was created using React. It combines the power of the Edamam API—bringing you official, nutrition-backed recipes from top sources—with the creativity and community of user-generated recipes stored securely on Firebase.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-card">
+                    <a href="/spotivibe.html">
+                        <img src="{{ url_for('static', filename='images/spotivibe.png') }}" alt="Spotivibe">
+                    </a>
+                </div>
+                <div class="project-text">
+                    <h2> SpotiVibe</h2>
+                    <p> This project was developed with React, to turn passive listening into an interactive, community-driven experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+
+    <button id="goToTopBtn" title="Go to top">↑</button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

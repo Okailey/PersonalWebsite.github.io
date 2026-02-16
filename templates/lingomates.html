@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
+
+        <nav class="flex flex-col space-y-4">
+        <a href="#introduction" class="hover:text-blue-600">Introduction</a>
+        <a href="#problemstat" class="hover:text-blue-600">Problem Statement</a>
+        <a href="#interviewchallenge" class="hover:text-blue-600">Interview Process & Challenges</a>
+        <a href="#target" class="hover:text-blue-600">Wireframes</a>
+        <a href="#swot" class="hover:text-blue-600">SWOT Analysis</a>
+        <a href="#conclusion" class="hover:text-blue-600">Next Steps / Future Plans</a>
+    </nav>
+</aside>
+
+<!-- Main Content -->
+   <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+    <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+        <h1 class="text-3xl font-bold text-center">LingoMates</h1>
+      <p>
+          This app was designed with the intention of enabling people to learn not only a language but also the culture, so they can properly communicate with family and friends (preserving the language) and understand the nuanced aspects of the culture. This is the minimum viable product (MVP) version of the app, focusing on teaching basic phrases and cultural context in a ghanian language called Twi.
+          It all started when I was studying abroad in Budapest, Hungary. </p>
+          <p> In my Leadership and Entrepreneurship class, we were tasked with identifying a problem and creating a business proposal to present to angel investors. In my group, we were all from different countries with different cultures and languages and that gave us the idea to dive into the language learning space. We realized that many children of immigrant parents did not know their native language and culture well enough to communicate with their family members and connect more with their roots. This led to some quick interviews with those who desired to know their mother tongue but had no resources that were stable enough to teach them. This inspired us to come up with LingoMates - an app that would help people learn languages in a culturally immersive way. 
+          When I got back to the states, I took another entrepreneurship capstone class where I took the initiative to move LingoMates from ideation to development.  </p>
+</p>
+    </section>
+
+    <!-- Problem Statements -->
+      <section id="problemstat" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">PROBLEM STATEMENTS</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong> Limited Options: </strong>Existing language learning tools (e.g., Duolingo) lack personalized, culturally immersive experiences.</li>
+          <li><strong>Cultural Loss: </strong>Many children of immigrants lose touch with their native languages and cultural heritage.</li>
+        </ul>
+      </section>
+
+      <!-- Interview Challenges -->
+      <section id="interviewchallenge" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">INTERVIEW CHALLENGES</h2>
+    
+        <p>  Many participants were uncomfortable speaking to strangers, and close friends were often too busy to assist.
+          Despite challenges, 3 detailed interviews confirmed the need for this app.</p>
+         <p> Most interviewees were high school or college students and I initially conducted Zoom or in-person interviews, later switched to voice calls for comfort. I completed 14 interviews in total.
+        </p>
+        <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/mvpjourney.png') }}" alt="image showing my roadmap for the MVP" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+
+
+      </section>
+
+      <!-- Target Audience & Insights -->
+      <section id="target" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">PLANNING PHASE AND CHALLENGES</h2>
+      <p>
+      Trying to narrow down the MVP elements was quite challenging because incorporating feedback into mockups required multiple levels of iteration.
+        Almost no APIs for this domain existed so I had to learn the basics of web scraping to overcome this challenge. I made sketches and now it was time to create wireframes.
+        At a point, I was caught in between deciding to focus on a web app or mobile app for the MVP. </p>
+
+          <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/planning.png') }}" alt="image showing the planning phase of the MVP" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+
+        <p> I first decided to create wireframes for the web application</p>
+         <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/wireF1.png') }}" alt="image showing wireframes of the web app" class="max-w-full md:max-w-sm">
+            <img src="{{ url_for('static', filename='images/wireF2.png') }}" alt="image showing wireframes of the web app" class="max-w-full md:max-w-sm">
+        </div>
+        <div class="flex justify-center items-center my-6">
+                        <img src="{{ url_for('static', filename='images/wireF3.png') }}" alt="image showing wireframes of the web app" class="max-w-full md:max-w-sm">
+                        </div>
+
+                
+<p> After seeing how the web app wireframes looked like, I first decided to create wire frames for the mobile application</p>
+<div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/mobile1.png') }}" alt="image showing wireframes of the mobile app" class="w-full md:w-2/3 lg:w-3/4">
+        </div>
+        <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/mobile2.png') }}" alt="image showing wireframes of the mobile app" class="w-full md:w-2/3 lg:w-3/4">
+            </div>
+        <div class="flex justify-center items-center my-6">
+            <img src="{{ url_for('static', filename='images/mobile3.png') }}" alt="image showing wireframes of the mobile app" class="w-full md:w-2/3 lg:w-3/4">
+            </div>
+
+        <p> 
+
+            After weighing the pros and cons, I decided to go with a mobile app using Swift as it aligned better with user needs for accessibility and convenience.</p>
+      </section>
+
+      <!-- SWOT Analysis -->
+      <section id="swot" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">SWOT ANALYSIS</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Strengths -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+      <h3 class="text-xl font-semibold mb-3 text-blue-600">Strengths</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-800">
+        <li><strong>Unique Focus:</strong> Combines language learning with cultural immersion, helping users connect deeply with their heritage.</li>
+        <li><strong>Personal Connections:</strong> Engages community members through interviews and real cultural input for a more authentic experience.</li>
+        <li><strong>Cultural Authenticity:</strong> Lessons reflect real-life cultural practices, traditions, and nuances, going beyond vocabulary alone.</li>
+      </ul>
+    </div>
+
+    <!-- Weaknesses -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+      <h3 class="text-xl font-semibold mb-3 text-red-500">Weaknesses</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-800">
+        <li><strong>Limited Initial Content:</strong> The app currently has a small set of lessons and languages, which may limit early engagement.</li>
+        <li><strong>Small Team / Resources:</strong> Developing features, expanding content, and scaling the app takes more time and effort with me as the sole developer.</li>
+      </ul>
+    </div>
+
+    <!-- Opportunities -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+      <h3 class="text-xl font-semibold mb-3 text-green-600">Opportunities</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-800">
+        <li><strong>Scalability for Tutors:</strong> Expand the platform with more tutors or contributors for personalized, diverse lessons.</li>
+        <li><strong>Partnerships:</strong> Collaborating with cultural organizations or schools can increase credibility, reach, and content quality.</li>
+        <li><strong>Language Expansion:</strong> Adding additional languages and dialects can attract a broader audience and preserve more cultural heritage.</li>
+        <li><strong>Social Media Presence:</strong> Sharing lessons on social platforms can grow a vibrant learning community and attract users.</li>
+      </ul>
+    </div>
+
+    <!-- Threats -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+      <h3 class="text-xl font-semibold mb-3 text-yellow-600">Threats</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-800">
+        <li><strong>Dialect Variations:</strong> Regional differences in language can make content creation more complex.</li>
+        <li><strong>Competition:</strong> Established language-learning platforms may attract users before the app scales.</li>
+        <li><strong>Content Accuracy:</strong> Ensuring accurate translations and culturally appropriate lessons is essential to maintain credibility.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+      <!-- Next Steps -->
+      <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center">CONCLUSION & NEXT STEPS</h2>
+      
+            <p> i was able to learn some new skills with Swift and this project allowed me to dive into web scraping and learn a little bit about it. I believe this experience has helped me grow as a developer and has given me a deeper appreciation for the challenges of building a scalable, culturally rich language learning platform.</p>
+            <p> Moving forward, I plan to continue developing the app with a focus on improving user experience and expanding content by:</p>
+              <ul class="list-disc list-inside space-y-2">
+            <li> Continuously gathering user feedback for iterative improvements</li>
+          <li>Incorporating complete lessons</li>
+          <li>Extending lessons with more videos and audios</li>
+          <li>Add more languages and hopefully dialects</li>
+          <li>Improve the learning experience with exercises and games</li>
+          <li>Seek partnerships, funding, and beta testers</li>
+          <li>Develop a marketing strategy to reach a wider audience</li>
+        </ul>
+      </section>
+
+    <section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </article>
+    <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+</body>
+
+</html>

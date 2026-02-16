@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Quaye</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+
+   
+   <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center p-6">
+    <!-- Left: Site Name -->
+    <div class="text-xl font-bold text-black">Danielle Quaye</div>
+
+    <!-- Right: Nav Links -->
+    <div class="flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="/AboutMe.html" class="text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="/projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="/#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+    </header>
+
+    <!--Sidebar nav-->
+   <aside class="hidden md:block fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] bg-[#DCFFFD] p-4 border-r">
+    <!-- Sidebar content -->
+
+        <nav class="flex flex-col space-y-4">
+        <a href="#introduction" class="hover:text-blue-600">Overview</a>
+        <a href="#process" class="hover:text-blue-600"> Process</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#conclusion" class="hover:text-blue-600">Conclusion</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+   <article class="md:ml-60 px-12 py-6 max-w-5xl mx-auto pt-24">
+    <section id="introduction" class="space-y-4 mt-12 scroll-mt-24">
+  <h2 class="text-3xl font-bold text-center">CLONY</h2>
+  <p>
+    A web application mimicking ChatGPT using OpenAI's API. Built with React for the frontend and Express.js for the backend, 
+    this project demonstrates how to manage continuous conversations with a chatbot while providing a clean user interface.
+  </p>
+</section>
+
+    <!-- Design Process -->
+  <section id="process" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">PROCESS</h2>
+    <p>
+      The project was developed in two main parts:
+    </p>
+    <ul class="list-disc list-inside space-y-2">
+      <li>
+        <strong>Backend (Express.js):</strong> Set up endpoints to securely send and receive messages from the OpenAI API. 
+        Implemented message handling that maintains conversation history for context-aware responses.
+      </li>
+      <li>
+        <strong>Frontend (React):</strong> Built an interactive chat interface differentiating between user messages and chatbot responses. 
+        Axios was used to communicate with the backend.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">FEATURES</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Send messages and receive dynamic, context-aware responses from the GPT-3.5-turbo model.</li>
+      <li>Maintain conversation continuity, so each message builds on previous interactions.</li>
+      <li>Simple, responsive chat UI that works across devices.</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion / Takeaways -->
+ <section id="conclusion" class="space-y-4 mt-12 scroll-mt-24">
+    <h2 class="text-2xl font-bold text-center">CONCLUSION</h2>
+    <p>
+      This project strengthened my understanding of full-stack development, API integration, and creating interactive user interfaces. 
+      It also demonstrated the challenges of managing conversation state and maintaining clean, responsive design while working with real-time data.
+    </p>
+  </section>
+
+
+ <section class="my-12">
+    <button
+  id="goToTopBtn"
+  aria-label="Go to top"
+  class="fixed bottom-3 right-6 hidden items-center justify-center
+         w-12 h-12 rounded-full bg-[#DCFFFD] text-black
+         shadow-lg hover:bg-blue-600 transition">
+  ↑
+</button>
+</section>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </article>
+    <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    &copy; 2026 Danielle Quaye
+  </footer>
+</body>
+
+</html>
